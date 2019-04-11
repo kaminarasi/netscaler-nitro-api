@@ -12,7 +12,7 @@ Configuration for EULA for vservers resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

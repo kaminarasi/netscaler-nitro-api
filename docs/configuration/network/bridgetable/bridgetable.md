@@ -12,7 +12,7 @@ Configuration for bridge table entry resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [CLEAR](#)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [CLEAR](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

@@ -7,12 +7,12 @@ Binding object showing the ci that can be bound to hanode.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>enaifaces</td><td>&lt;String></td><td>Read-write</td><td>Enabled interfaces.</td></tr><tr><td>routemonitor</td><td>&lt;String></td><td>Read-write</td><td>A route that you want the NetScaler appliance to monitor in its internal routing table. You can specify an IPv4 address or network, or an IPv6 address or network prefix. If you specify an IPv4 network address or IPv6 network prefix, the appliance monitors any route that matches the network or prefix.<br>Minimum length = 1</td></tr><tr><td>id</td><td>&lt;Double></td><td>Read-write</td><td>Number that uniquely identifies the local node. The ID of the local node is always 0.<br>Minimum value = 0<br>Maximum value = 64</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>enaifaces</td><td>&lt;String></td><td>Read-write</td><td>Enabled interfaces.</td></tr><tr><td>routemonitor</td><td>&lt;String></td><td>Read-write</td><td>A route that you want the Citrix ADC to monitor in its internal routing table. You can specify an IPv4 address or network, or an IPv6 address or network prefix. If you specify an IPv4 network address or IPv6 network prefix, the appliance monitors any route that matches the network or prefix.<br>Minimum length = 1</td></tr><tr><td>id</td><td>&lt;Double></td><td>Read-write</td><td>Number that uniquely identifies the local node. The ID of the local node is always 0.<br>Minimum value = 0<br>Maximum value = 64</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

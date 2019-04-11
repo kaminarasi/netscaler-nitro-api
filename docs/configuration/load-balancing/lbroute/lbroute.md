@@ -12,7 +12,7 @@ Configuration for LB route resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

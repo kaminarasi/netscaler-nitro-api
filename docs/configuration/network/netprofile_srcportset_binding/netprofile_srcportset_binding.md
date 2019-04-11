@@ -7,12 +7,12 @@ Binding object showing the srcportset that can be bound to netprofile.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>srcportrange</td><td>&lt;String></td><td>Read-write</td><td>When the source port range is configured and associated with the netprofile bound to a service group, Netscaler will choose a port from the range configured for connection establishment at the backend servers.<br>Minimum length = 1024<br>Maximum length = 65535</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the netprofile to which to bind port ranges.<br>Minimum length = 1</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>srcportrange</td><td>&lt;String></td><td>Read-write</td><td>When the source port range is configured and associated with the netprofile bound to a service group, Citrix ADC will choose a port from the range configured for connection establishment at the backend servers.<br>Minimum length = 1024<br>Maximum length = 65535</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the netprofile to which to bind port ranges.<br>Minimum length = 1</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/netprofile_srcportset_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/netprofile_srcportset_binding/name_value&lt;String&gt;?<b>args=srcportrange:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

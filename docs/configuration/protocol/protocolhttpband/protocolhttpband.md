@@ -12,7 +12,7 @@ Configuration for HTTP request/response band resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [CLEAR](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [CLEAR](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

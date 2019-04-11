@@ -7,12 +7,12 @@ Binding object showing the safeobject that can be bound to appfwprofile.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>maxmatchlength</td><td>&lt;Double></td><td>Read-write</td><td>Maximum match length for a Safe Object expression.</td></tr><tr><td>state</td><td>&lt;String></td><td>Read-write</td><td>Enabled.<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>expression</td><td>&lt;String></td><td>Read-write</td><td>A regular expression that defines the Safe Object.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the profile to which to bind an exemption or rule.<br>Minimum length = 1</td></tr><tr><td>safeobject</td><td>&lt;String></td><td>Read-write</td><td>Name of the Safe Object.</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments about the purpose of profile, or other useful information about the profile.</td></tr><tr><td>action</td><td>&lt;String[]></td><td>Read-write</td><td>Safe Object action types. (BLOCK | LOG | STATS | NONE).<br>Possible values = none, block, log, remove, stats, xout</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>maxmatchlength</td><td>&lt;Double></td><td>Read-write</td><td>Maximum match length for a Safe Object expression.</td></tr><tr><td>state</td><td>&lt;String></td><td>Read-write</td><td>Enabled.<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the profile to which to bind an exemption or rule.<br>Minimum length = 1</td></tr><tr><td>safeobject</td><td>&lt;String></td><td>Read-write</td><td>Name of the Safe Object.</td></tr><tr><td>as_expression</td><td>&lt;String></td><td>Read-write</td><td>A regular expression that defines the Safe Object.</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments about the purpose of profile, or other useful information about the profile.</td></tr><tr><td>action</td><td>&lt;String[]></td><td>Read-write</td><td>Safe Object action types. (BLOCK | LOG | STATS | NONE).<br>Possible values = none, block, log, remove, stats, xout</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"appfwprofile_safeobject_binding":{<b>"name":<String_value>,</b>"safeobject":<String_value>,"expression":<String_value>,"maxmatchlength":<Double_value>,"action":<String[]_value>,"comment":<String_value>,"state":<String_value>}}```
+<b>Request Payload: </b>```{"appfwprofile_safeobject_binding":{<b>"name":<String_value>,</b>"safeobject":<String_value>,"as_expression":<String_value>,"maxmatchlength":<Double_value>,"action":<String[]_value>,"comment":<String_value>,"state":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/appfwprofile_safeobject_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/appfwprofile_safeobject_binding/name_value&lt;String&gt;?<b>args=safeobject:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 
@@ -79,7 +85,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "appfwprofile_safeobject_binding": [ {"maxmatchlength":<Double_value>,"state":<String_value>,"expression":<String_value>,"name":<String_value>,"safeobject":<String_value>,"comment":<String_value>,"action":<String[]_value>}]}```
+<b>Response Payload: </b>```{ "appfwprofile_safeobject_binding": [ {"maxmatchlength":<Double_value>,"state":<String_value>,"name":<String_value>,"safeobject":<String_value>,"as_expression":<String_value>,"comment":<String_value>,"action":<String[]_value>}]}```
 
 
 
@@ -105,7 +111,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "appfwprofile_safeobject_binding": [ {"maxmatchlength":<Double_value>,"state":<String_value>,"expression":<String_value>,"name":<String_value>,"safeobject":<String_value>,"comment":<String_value>,"action":<String[]_value>}]}```
+<b>Response Payload: </b>```{ "appfwprofile_safeobject_binding": [ {"maxmatchlength":<Double_value>,"state":<String_value>,"name":<String_value>,"safeobject":<String_value>,"as_expression":<String_value>,"comment":<String_value>,"action":<String[]_value>}]}```
 
 
 

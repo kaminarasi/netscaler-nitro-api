@@ -7,12 +7,12 @@ Binding object which returns the resources bound to wisite.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>sitepath</td><td>&lt;String></td><td>Read-write</td><td>Path of a Web Interface site whose details you want the NetScaler appliance to display.<br>Minimum length = 1<br>Maximum length = 250</td></tr><tr><td>wisite_translationinternalip_binding</td><td>&lt;wisite_translationinternalip_binding[]></td><td>Read-only</td><td>translationinternalip that can be bound to wisite.</td></tr><tr><td>wisite_accessmethod_binding</td><td>&lt;wisite_accessmethod_binding[]></td><td>Read-only</td><td>accessmethod that can be bound to wisite.</td></tr><tr><td>wisite_farmname_binding</td><td>&lt;wisite_farmname_binding[]></td><td>Read-only</td><td>farmname that can be bound to wisite.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>sitepath</td><td>&lt;String></td><td>Read-write</td><td>Path of a Web Interface site whose details you want the Citrix ADC to display.<br>Minimum length = 1<br>Maximum length = 250</td></tr><tr><td>wisite_translationinternalip_binding</td><td>&lt;wisite_translationinternalip_binding[]></td><td>Read-only</td><td>translationinternalip that can be bound to wisite.</td></tr><tr><td>wisite_accessmethod_binding</td><td>&lt;wisite_accessmethod_binding[]></td><td>Read-only</td><td>accessmethod that can be bound to wisite.</td></tr><tr><td>wisite_farmname_binding</td><td>&lt;wisite_farmname_binding[]></td><td>Read-only</td><td>farmname that can be bound to wisite.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)
+[GET]()| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

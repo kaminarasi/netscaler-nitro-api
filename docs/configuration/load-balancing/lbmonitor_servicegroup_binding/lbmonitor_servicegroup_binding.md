@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/lbmonitor_servicegroup_binding/monitorname_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/lbmonitor_servicegroup_binding/monitorname_value&lt;String&gt;?<b>args=servicename:&lt;String_value&gt;,servicegroupname:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

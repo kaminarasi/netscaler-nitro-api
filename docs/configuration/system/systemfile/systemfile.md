@@ -7,12 +7,12 @@ Configuration for file resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>filename</td><td>&lt;String></td><td>Read-write</td><td>Name of the file. It should not include filepath.<br>Maximum length = 63</td></tr><tr><td>filecontent</td><td>&lt;String></td><td>Read-write</td><td>file content in Base64 format.</td></tr><tr><td>filelocation</td><td>&lt;String></td><td>Read-write</td><td>location of the file on NetScaler.<br>Maximum length = 127</td></tr><tr><td>fileencoding</td><td>&lt;String></td><td>Read-write</td><td>encoding type of the file content.<br>Default value: "BASE64"</td></tr><tr><td>fileaccesstime</td><td>&lt;String></td><td>Read-only</td><td>Last access time of the file.</td></tr><tr><td>filemodifiedtime</td><td>&lt;String></td><td>Read-only</td><td>last modified time of the file.</td></tr><tr><td>filemode</td><td>&lt;String[]></td><td>Read-only</td><td>file mode.<br>Possible values = DIRECTORY</td></tr><tr><td>filesize</td><td>&lt;Double></td><td>Read-only</td><td>Size of the file in BYTES.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>filename</td><td>&lt;String></td><td>Read-write</td><td>Name of the file. It should not include filepath.<br>Maximum length = 63</td></tr><tr><td>filecontent</td><td>&lt;String></td><td>Read-write</td><td>file content in Base64 format.</td></tr><tr><td>filelocation</td><td>&lt;String></td><td>Read-write</td><td>location of the file on Citrix ADC.<br>Maximum length = 127</td></tr><tr><td>fileencoding</td><td>&lt;String></td><td>Read-write</td><td>encoding type of the file content.<br>Default value: "BASE64"</td></tr><tr><td>fileaccesstime</td><td>&lt;String></td><td>Read-only</td><td>Last access time of the file.</td></tr><tr><td>filemodifiedtime</td><td>&lt;String></td><td>Read-only</td><td>last modified time of the file.</td></tr><tr><td>filemode</td><td>&lt;String[]></td><td>Read-only</td><td>file mode.<br>Possible values = DIRECTORY</td></tr><tr><td>filesize</td><td>&lt;Double></td><td>Read-only</td><td>Size of the file in BYTES.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:

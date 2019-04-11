@@ -7,12 +7,12 @@ Binding object showing the nsacl6 that can be bound to lsnclient.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>clientname</td><td>&lt;String></td><td>Read-write</td><td>Name for the LSN client entity. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the LSN client is created. The following requirement applies only to the NetScaler CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "lsn client1" or 'lsn client1'). .<br>Minimum length = 1<br>Maximum length = 127</td></tr><tr><td>acl6name</td><td>&lt;String></td><td>Read-write</td><td>Name of any configured extended ACL6 whose action is ALLOW. The condition specified in the extended ACL6 rule is used as the condition for the LSN client.<br>Minimum length = 1</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>ID of the traffic domain on which this subscriber or the subscriber network (as specified by the network parameter) belongs. If you do not specify an ID, the subscriber or the subscriber network becomes part of the default traffic domain.<br>Default value: 0<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>clientname</td><td>&lt;String></td><td>Read-write</td><td>Name for the LSN client entity. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the LSN client is created. The following requirement applies only to the Citrix ADC CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "lsn client1" or 'lsn client1'). .<br>Minimum length = 1<br>Maximum length = 127</td></tr><tr><td>acl6name</td><td>&lt;String></td><td>Read-write</td><td>Name of any configured extended ACL6 whose action is ALLOW. The condition specified in the extended ACL6 rule is used as the condition for the LSN client.<br>Minimum length = 1</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>ID of the traffic domain on which this subscriber or the subscriber network (as specified by the network parameter) belongs. If you do not specify an ID, the subscriber or the subscriber network becomes part of the default traffic domain.<br>Default value: 0<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/lsnclient_nsacl6_binding/clientname_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/lsnclient_nsacl6_binding/clientname_value&lt;String&gt;?<b>args=acl6name:&lt;String_value&gt;,td:&lt;Double_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

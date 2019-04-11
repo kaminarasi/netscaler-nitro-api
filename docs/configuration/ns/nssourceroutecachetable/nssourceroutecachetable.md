@@ -12,7 +12,7 @@ Configuration for Source IP Mac Cache Table. resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[FLUSH](#)| [GET (ALL)](#get-)| [COUNT](#)
+[FLUSH](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

@@ -12,7 +12,7 @@ Configuration for archive resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[EXPORT](#e)| [IMPORT](#i)| [DELETE](#d)| [GET (ALL)](#get-)
+[EXPORT](#e)| [IMPORT](#i)| [DELETE](#d)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

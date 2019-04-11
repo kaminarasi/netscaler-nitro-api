@@ -7,12 +7,12 @@ Binding object showing the sslcertkey that can be bound to vpnglobal.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>crlcheck</td><td>&lt;String></td><td>Read-write</td><td>The state of the CRL check parameter (Mandatory/Optional).<br>Possible values = Mandatory, Optional</td></tr><tr><td>cacert</td><td>&lt;String></td><td>Read-write</td><td>The name of the CA certificate binding.</td></tr><tr><td>certkeyname</td><td>&lt;String></td><td>Read-write</td><td>SSL certkey to use in signing tokens.</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Applicable only to advance vpn session policy. An expression or other value specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>ocspcheck</td><td>&lt;String></td><td>Read-write</td><td>The state of the OCSP check parameter (Mandatory/Optional).<br>Possible values = Mandatory, Optional</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>crlcheck</td><td>&lt;String></td><td>Read-write</td><td>The state of the CRL check parameter (Mandatory/Optional).<br>Possible values = Mandatory, Optional</td></tr><tr><td>cacert</td><td>&lt;String></td><td>Read-write</td><td>The name of the CA certificate binding.</td></tr><tr><td>certkeyname</td><td>&lt;String></td><td>Read-write</td><td>SSL certkey to use in signing tokens.</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Applicable only to advance vpn session policy. An expression or other value specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>ocspcheck</td><td>&lt;String></td><td>Read-write</td><td>The state of the OCSP check parameter (Mandatory/Optional).<br>Possible values = Mandatory, Optional</td></tr><tr><td>userdataencryptionkey</td><td>&lt;String></td><td>Read-write</td><td>Certificate to be used for encrypting user data like KB Question and Answers, Alternate Email Address, etc.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"vpnglobal_sslcertkey_binding":{"gotopriorityexpression":<String_value>,"certkeyname":<String_value>,"cacert":<String_value>,"crlcheck":<String_value>,"ocspcheck":<String_value>}}```
+<b>Request Payload: </b>```{"vpnglobal_sslcertkey_binding":{"gotopriorityexpression":<String_value>,"certkeyname":<String_value>,"userdataencryptionkey":<String_value>,"cacert":<String_value>,"crlcheck":<String_value>,"ocspcheck":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/vpnglobal_sslcertkey_binding
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/vpnglobal_sslcertkey_binding?<b>args=certkeyname:&lt;String_value&gt;,userdataencryptionkey:&lt;String_value&gt;,cacert:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 
@@ -79,7 +85,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "vpnglobal_sslcertkey_binding": [ {"crlcheck":<String_value>,"cacert":<String_value>,"certkeyname":<String_value>,"gotopriorityexpression":<String_value>,"ocspcheck":<String_value>}]}```
+<b>Response Payload: </b>```{ "vpnglobal_sslcertkey_binding": [ {"crlcheck":<String_value>,"cacert":<String_value>,"certkeyname":<String_value>,"gotopriorityexpression":<String_value>,"ocspcheck":<String_value>,"userdataencryptionkey":<String_value>}]}```
 
 
 
@@ -105,7 +111,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "vpnglobal_sslcertkey_binding": [ {"crlcheck":<String_value>,"cacert":<String_value>,"certkeyname":<String_value>,"gotopriorityexpression":<String_value>,"ocspcheck":<String_value>}]}```
+<b>Response Payload: </b>```{ "vpnglobal_sslcertkey_binding": [ {"crlcheck":<String_value>,"cacert":<String_value>,"certkeyname":<String_value>,"gotopriorityexpression":<String_value>,"ocspcheck":<String_value>,"userdataencryptionkey":<String_value>}]}```
 
 
 

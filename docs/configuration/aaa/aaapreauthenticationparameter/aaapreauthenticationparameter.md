@@ -7,12 +7,12 @@ Configuration for pre authentication parameter resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>preauthenticationaction</td><td>&lt;String></td><td>Read-write</td><td>Deny or allow login on the basis of end point analysis results.<br>Possible values = ALLOW, DENY</td></tr><tr><td>rule</td><td>&lt;String></td><td>Read-write</td><td>Name of the NetScaler named rule, or a default syntax expression, to be evaluated by the EPA tool.</td></tr><tr><td>killprocess</td><td>&lt;String></td><td>Read-write</td><td>String specifying the name of a process to be terminated by the EPA tool.</td></tr><tr><td>deletefiles</td><td>&lt;String></td><td>Read-write</td><td>String specifying the path(s) to and name(s) of the files to be deleted by the EPA tool, as a string of between 1 and 1023 characters.</td></tr><tr><td>builtin</td><td>&lt;String[]></td><td>Read-only</td><td>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.<br>Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>preauthenticationaction</td><td>&lt;String></td><td>Read-write</td><td>Deny or allow login on the basis of end point analysis results.<br>Possible values = ALLOW, DENY</td></tr><tr><td>rule</td><td>&lt;String></td><td>Read-write</td><td>Name of the Citrix ADC named rule, or a default syntax expression, to be evaluated by the EPA tool.</td></tr><tr><td>killprocess</td><td>&lt;String></td><td>Read-write</td><td>String specifying the name of a process to be terminated by the EPA tool.</td></tr><tr><td>deletefiles</td><td>&lt;String></td><td>Read-write</td><td>String specifying the path(s) to and name(s) of the files to be deleted by the EPA tool, as a string of between 1 and 1023 characters.</td></tr><tr><td>builtin</td><td>&lt;String[]></td><td>Read-only</td><td>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.<br>Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

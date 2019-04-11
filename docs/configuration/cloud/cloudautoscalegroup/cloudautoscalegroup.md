@@ -12,7 +12,7 @@ Configuration for Cloud autoscalegroup resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

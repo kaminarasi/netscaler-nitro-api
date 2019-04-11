@@ -7,7 +7,7 @@ Configuration for application resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>apptemplatefilename</td><td>&lt;String></td><td>Read-write</td><td>Name of the AppExpert application template file.</td></tr><tr><td>appname</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the application on the NetScaler appliance. If you do not provide a name, the appliance assigns the application the name of the template file.</td></tr><tr><td>deploymentfilename</td><td>&lt;String></td><td>Read-write</td><td>Name of the deployment file.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>apptemplatefilename</td><td>&lt;String></td><td>Read-write</td><td>Name of the AppExpert application template file.</td></tr><tr><td>appname</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the application on the Citrix ADC. If you do not provide a name, the appliance assigns the application the name of the template file.</td></tr><tr><td>deploymentfilename</td><td>&lt;String></td><td>Read-write</td><td>Name of the deployment file.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 

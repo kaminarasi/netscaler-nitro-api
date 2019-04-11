@@ -7,12 +7,12 @@ Binding object showing the sslpolicy that can be bound to sslvserver.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>priority</td><td>&lt;Double></td><td>Read-write</td><td>The priority of the policies bound to this SSL service.<br>Minimum value = 0<br>Maximum value = 65534</td></tr><tr><td>policyname</td><td>&lt;String></td><td>Read-write</td><td>The name of the SSL policy binding.</td></tr><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name of the label to invoke if the current policy rule evaluates to TRUE.</td></tr><tr><td>vservername</td><td>&lt;String></td><td>Read-write</td><td>Name of the SSL virtual server.<br>Minimum length = 1</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>invoke</td><td>&lt;Boolean></td><td>Read-write</td><td>Invoke flag. This attribute is relevant only for ADVANCED policies.</td></tr><tr><td>type</td><td>&lt;String></td><td>Read-write</td><td>Bind point to which to bind the policy. Possible Values: REQUEST and INTERCEPT_REQ. These bindpoints mean: 1. REQUEST: Policy evaluation will be done at appplication above SSL. This bindpoint is default and is used for actions based on clientauth and client cert. 2. INTERCEPT_REQ: Policy evaluation will be done during SSL handshake to decide whether to intercept or not. Actions allowed with this type are: INTERCEPT, BYPASS and RESET.<br>Default value: REQUEST<br>Possible values = INTERCEPT_REQ, REQUEST</td></tr><tr><td>labeltype</td><td>&lt;String></td><td>Read-write</td><td>Type of policy label invocation.<br>Possible values = vserver, service, policylabel</td></tr><tr><td>polinherit</td><td>&lt;Double></td><td>Read-only</td><td>Whether the bound policy is a inherited policy or not.<br>Minimum value = 0<br>Maximum value = 254</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>priority</td><td>&lt;Double></td><td>Read-write</td><td>The priority of the policies bound to this SSL service.<br>Minimum value = 0<br>Maximum value = 65534</td></tr><tr><td>policyname</td><td>&lt;String></td><td>Read-write</td><td>The name of the SSL policy binding.</td></tr><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name of the label to invoke if the current policy rule evaluates to TRUE.</td></tr><tr><td>vservername</td><td>&lt;String></td><td>Read-write</td><td>Name of the SSL virtual server.<br>Minimum length = 1</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>invoke</td><td>&lt;Boolean></td><td>Read-write</td><td>Invoke flag. This attribute is relevant only for ADVANCED policies.</td></tr><tr><td>type</td><td>&lt;String></td><td>Read-write</td><td>Bind point to which to bind the policy. Possible Values: REQUEST, INTERCEPT_REQ and CLIENTHELLO_REQ. These bindpoints mean: 1. REQUEST: Policy evaluation will be done at appplication above SSL. This bindpoint is default and is used for actions based on clientauth and client cert. 2. INTERCEPT_REQ: Policy evaluation will be done during SSL handshake to decide whether to intercept or not. Actions allowed with this type are: INTERCEPT, BYPASS and RESET. 3. CLIENTHELLO_REQ: Policy evaluation will be done during handling of Client Hello Request. Action allowed with this type is: RESET, FORWARD and PICKCACERTGRP.<br>Default value: REQUEST<br>Possible values = INTERCEPT_REQ, REQUEST, CLIENTHELLO_REQ</td></tr><tr><td>labeltype</td><td>&lt;String></td><td>Read-write</td><td>Type of policy label invocation.<br>Possible values = vserver, service, policylabel</td></tr><tr><td>polinherit</td><td>&lt;Double></td><td>Read-only</td><td>Whether the bound policy is a inherited policy or not.<br>Minimum value = 0<br>Maximum value = 254</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/sslvserver_sslpolicy_binding/vservername_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/sslvserver_sslpolicy_binding/vservername_value&lt;String&gt;?<b>args=policyname:&lt;String_value&gt;,priority:&lt;Double_value&gt;,type:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

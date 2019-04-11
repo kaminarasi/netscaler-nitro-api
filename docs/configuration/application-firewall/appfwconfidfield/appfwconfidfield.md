@@ -12,7 +12,7 @@ Configuration for configured confidential form fields resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

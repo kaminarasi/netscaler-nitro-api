@@ -7,12 +7,12 @@ Configuration for sync status resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>response</td><td>&lt;String></td><td>Read-only</td><td>gslb sync status as text blob.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>summary</td><td>&lt;Boolean></td><td>Read-write</td><td>sync status summary to be displayed in one line (Success/Failure), in case of Failure stating reason for failure.</td></tr><tr><td>response</td><td>&lt;String></td><td>Read-only</td><td>gslb sync status as text blob.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)
+[GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -28,6 +28,13 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/gslbsyncstatus
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/gslbsyncstatus?<b>args=summary:&lt;Boolean_value&gt;</b>
+Use this query-parameter to get gslbsyncstatus resources based on additional properties.
+
+
+
 <b>HTTP Method:</b>GET
 <b>Request Headers:</b>
 
@@ -38,7 +45,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "gslbsyncstatus": [ {"response":<String_value>}]}```
+<b>Response Payload: </b>```{ "gslbsyncstatus": [ {summary:<Boolean_value>"response":<String_value>}]}```
 
 
 

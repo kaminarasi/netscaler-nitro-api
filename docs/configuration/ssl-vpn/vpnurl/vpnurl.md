@@ -7,12 +7,12 @@ Configuration for VPN URL resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>urlname</td><td>&lt;String></td><td>Read-write</td><td>Name of the bookmark link.<br>Minimum length = 1</td></tr><tr><td>linkname</td><td>&lt;String></td><td>Read-write</td><td>Description of the bookmark link. The description appears in the Access Interface.<br>Minimum length = 1</td></tr><tr><td>actualurl</td><td>&lt;String></td><td>Read-write</td><td>Web address for the bookmark link.<br>Minimum length = 1</td></tr><tr><td>vservername</td><td>&lt;String></td><td>Read-write</td><td>Name of the associated LB/CS vserver.</td></tr><tr><td>clientlessaccess</td><td>&lt;String></td><td>Read-write</td><td>If clientless access to the resource hosting the link is allowed, also use clientless access for the bookmarked web address in the Secure Client Access based session. Allows single sign-on and other HTTP processing on NetScaler Gateway for HTTPS resources.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments associated with the bookmark link.</td></tr><tr><td>iconurl</td><td>&lt;String></td><td>Read-write</td><td>URL to fetch icon file for displaying this resource.</td></tr><tr><td>ssotype</td><td>&lt;String></td><td>Read-write</td><td>Single sign on type for unified gateway.<br>Possible values = unifiedgateway, selfauth, samlauth</td></tr><tr><td>applicationtype</td><td>&lt;String></td><td>Read-write</td><td>The type of application this VPN URL represents. Possible values are CVPN/SaaS/VPN.<br>Possible values = CVPN, VPN, SaaS</td></tr><tr><td>samlssoprofile</td><td>&lt;String></td><td>Read-write</td><td>Profile to be used for doing SAML SSO.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>urlname</td><td>&lt;String></td><td>Read-write</td><td>Name of the bookmark link.<br>Minimum length = 1</td></tr><tr><td>linkname</td><td>&lt;String></td><td>Read-write</td><td>Description of the bookmark link. The description appears in the Access Interface.<br>Minimum length = 1</td></tr><tr><td>actualurl</td><td>&lt;String></td><td>Read-write</td><td>Web address for the bookmark link.<br>Minimum length = 1</td></tr><tr><td>vservername</td><td>&lt;String></td><td>Read-write</td><td>Name of the associated LB/CS vserver.</td></tr><tr><td>clientlessaccess</td><td>&lt;String></td><td>Read-write</td><td>If clientless access to the resource hosting the link is allowed, also use clientless access for the bookmarked web address in the Secure Client Access based session. Allows single sign-on and other HTTP processing on Citrix Gateway for HTTPS resources.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments associated with the bookmark link.</td></tr><tr><td>iconurl</td><td>&lt;String></td><td>Read-write</td><td>URL to fetch icon file for displaying this resource.</td></tr><tr><td>ssotype</td><td>&lt;String></td><td>Read-write</td><td>Single sign on type for unified gateway.<br>Possible values = unifiedgateway, selfauth, samlauth</td></tr><tr><td>applicationtype</td><td>&lt;String></td><td>Read-write</td><td>The type of application this VPN URL represents. Possible values are CVPN/SaaS/VPN.<br>Possible values = CVPN, VPN, SaaS</td></tr><tr><td>samlssoprofile</td><td>&lt;String></td><td>Read-write</td><td>Profile to be used for doing SAML SSO.</td></tr><tr><td>appjson</td><td>&lt;String></td><td>Read-write</td><td>To store the template details in the json format.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b><b>"linkname":<String_value>,</b><b>"actualurl":<String_value>,</b>"vservername":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>}}```
+<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b><b>"linkname":<String_value>,</b><b>"actualurl":<String_value>,</b>"vservername":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>,"appjson":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -62,7 +62,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b>"linkname":<String_value>,"actualurl":<String_value>,"vservername":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>}}```
+<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b>"linkname":<String_value>,"actualurl":<String_value>,"vservername":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>,"appjson":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -77,7 +77,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b>"vservername":true,"clientlessaccess":true,"comment":true,"iconurl":true,"ssotype":true,"applicationtype":true,"samlssoprofile":true}}```
+<b>Request Payload: </b>```{"vpnurl":{<b>"urlname":<String_value>,</b>"vservername":true,"clientlessaccess":true,"comment":true,"iconurl":true,"ssotype":true,"applicationtype":true,"samlssoprofile":true,"appjson":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -119,7 +119,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "vpnurl": [ {"urlname":<String_value>,"linkname":<String_value>,"vservername":<String_value>,"actualurl":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>}]}```
+<b>Response Payload: </b>```{ "vpnurl": [ {"urlname":<String_value>,"linkname":<String_value>,"vservername":<String_value>,"actualurl":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>,"appjson":<String_value>}]}```
 
 
 
@@ -150,7 +150,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "vpnurl": [ {"urlname":<String_value>,"linkname":<String_value>,"vservername":<String_value>,"actualurl":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>}]}```
+<b>Response Payload: </b>```{ "vpnurl": [ {"urlname":<String_value>,"linkname":<String_value>,"vservername":<String_value>,"actualurl":<String_value>,"clientlessaccess":<String_value>,"comment":<String_value>,"iconurl":<String_value>,"ssotype":<String_value>,"applicationtype":<String_value>,"samlssoprofile":<String_value>,"appjson":<String_value>}]}```
 
 
 

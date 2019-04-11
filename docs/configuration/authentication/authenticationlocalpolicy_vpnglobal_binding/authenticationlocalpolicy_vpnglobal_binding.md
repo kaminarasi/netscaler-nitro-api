@@ -12,7 +12,7 @@ Binding object showing the vpnglobal that can be bound to authenticationlocalpol
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

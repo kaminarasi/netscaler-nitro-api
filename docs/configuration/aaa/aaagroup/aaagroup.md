@@ -7,12 +7,12 @@ Configuration for AAA group resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>groupname</td><td>&lt;String></td><td>Read-write</td><td>Name for the group. Must begin with a letter, number, or the underscore character (_), and must consist only of letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at sign (@), equals (=), colon (:), and underscore characters. Cannot be changed after the group is added.<br><br>The following requirement applies only to the NetScaler CLI:<br>If the name includes one or more spaces, enclose the name in double or<br>single quotation marks (for example, "my aaa group" or 'my aaa group').<br>Minimum length = 1</td></tr><tr><td>weight</td><td>&lt;Double></td><td>Read-write</td><td>Weight of this group with respect to other configured aaa groups (lower the number higher the weight).<br>Default value: 0<br>Minimum value = 0<br>Maximum value = 65535</td></tr><tr><td>loggedin</td><td>&lt;Boolean></td><td>Read-write</td><td>Display only the group members who are currently logged in.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>groupname</td><td>&lt;String></td><td>Read-write</td><td>Name for the group. Must begin with a letter, number, or the underscore character (_), and must consist only of letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at sign (@), equals (=), colon (:), and underscore characters. Cannot be changed after the group is added.<br><br>The following requirement applies only to the Citrix ADC CLI:<br>If the name includes one or more spaces, enclose the name in double or<br>single quotation marks (for example, "my aaa group" or 'my aaa group').<br>Minimum length = 1</td></tr><tr><td>weight</td><td>&lt;Double></td><td>Read-write</td><td>Weight of this group with respect to other configured aaa groups (lower the number higher the weight).<br>Default value: 0<br>Minimum value = 0<br>Maximum value = 65535</td></tr><tr><td>loggedin</td><td>&lt;Boolean></td><td>Read-write</td><td>Display only the group members who are currently logged in.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

@@ -7,12 +7,12 @@ Configuration for Web Front resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>jre</td><td>&lt;String></td><td>Read-write</td><td>Complete path to the JRE tar file. <br>You can use OpenJDK7 package for FreeBSD 8.x/amd64.The Java package can be downloaded from http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/amd64/amd64/8.4-RELEASE/packages/java/openjdk-7.17.02_2.tbz or http://www.freebsdfoundation.org/cgi-bin/download?download=diablo-jdk-freebsd6.amd64.1.7.17.07.02.tbz.<br>Minimum length = 1<br>Maximum length = 255</td></tr><tr><td>wf</td><td>&lt;String></td><td>Read-write</td><td>Complete path to the WebFront tar file for installing the WebFront on the NetScaler appliance. This file includes Apache Tomcat Web server. The file name has the following format: nswf-&lt;version number&gt;.tar (for example, nswf-1.5.tar).<br>Minimum length = 1<br>Maximum length = 255</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>jre</td><td>&lt;String></td><td>Read-write</td><td>Complete path to the JRE tar file. <br>You can use OpenJDK7 package for FreeBSD 8.x/amd64.The Java package can be downloaded from http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/amd64/amd64/8.4-RELEASE/packages/java/openjdk-7.17.02_2.tbz or http://www.freebsdfoundation.org/cgi-bin/download?download=diablo-jdk-freebsd6.amd64.1.7.17.07.02.tbz.<br>Minimum length = 1<br>Maximum length = 255</td></tr><tr><td>wf</td><td>&lt;String></td><td>Read-write</td><td>Complete path to the WebFront tar file for installing the WebFront on the Citrix ADC. This file includes Apache Tomcat Web server. The file name has the following format: nswf-&lt;version number&gt;.tar (for example, nswf-1.5.tar).<br>Minimum length = 1<br>Maximum length = 255</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[INSTALL](#in)| [GET (ALL)](#get-)
+[INSTALL](#in)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

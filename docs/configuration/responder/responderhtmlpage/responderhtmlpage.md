@@ -7,12 +7,12 @@ Configuration for Responder HTML page resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>Local path to and name of, or URL \(protocol, host, path, and file name\) for, the file in which to store the imported HTML page.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the HTML page object on the NetScaler appliance.<br>Minimum length = 1<br>Maximum length = 31</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments to preserve information about the HTML page object.<br>Maximum length = 128</td></tr><tr><td>overwrite</td><td>&lt;Boolean></td><td>Read-write</td><td>Overwrites the existing file.</td></tr><tr><td>response</td><td>&lt;String></td><td>Read-only</td><td>.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>Local path to and name of, or URL \(protocol, host, path, and file name\) for, the file in which to store the imported HTML page.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the HTML page object on the Citrix ADC.<br>Minimum length = 1<br>Maximum length = 31</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Any comments to preserve information about the HTML page object.<br>Maximum length = 128</td></tr><tr><td>overwrite</td><td>&lt;Boolean></td><td>Read-write</td><td>Overwrites the existing file.</td></tr><tr><td>response</td><td>&lt;String></td><td>Read-only</td><td>.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[IMPORT](#i)| [DELETE](#d)| [CHANGE](#c)| [GET (ALL)](#get-)| [GET]()
+[IMPORT](#i)| [DELETE](#d)| [CHANGE](#c)| [GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:

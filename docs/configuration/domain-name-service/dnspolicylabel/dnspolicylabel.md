@@ -12,7 +12,7 @@ Configuration for dns policy label resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [RENAME](#r)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [RENAME](#r)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

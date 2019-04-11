@@ -12,7 +12,7 @@ Configuration for learning settings resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

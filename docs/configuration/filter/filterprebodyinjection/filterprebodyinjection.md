@@ -7,12 +7,12 @@ Configuration for HTML Injection prebody resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>prebody</td><td>&lt;String></td><td>Read-write</td><td>Name of file whose contents are to be inserted before the response body.<br>Minimum length = 1</td></tr><tr><td>systemiid</td><td>&lt;String></td><td>Read-only</td><td>The system IID of the current NetScaler system.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>prebody</td><td>&lt;String></td><td>Read-write</td><td>Name of file whose contents are to be inserted before the response body.<br>Minimum length = 1</td></tr><tr><td>systemiid</td><td>&lt;String></td><td>Read-only</td><td>The system IID of the current Citrix ADC system.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

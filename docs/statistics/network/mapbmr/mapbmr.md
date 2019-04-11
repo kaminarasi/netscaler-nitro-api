@@ -12,7 +12,7 @@ Statistics for MAP-T Basic Mapping rule resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [GET]()
+[GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:

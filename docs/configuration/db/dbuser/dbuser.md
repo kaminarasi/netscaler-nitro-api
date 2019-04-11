@@ -7,12 +7,12 @@ Configuration for DB user resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>username</td><td>&lt;String></td><td>Read-write</td><td>Name of the database user. Must be the same as the user name specified in the database.<br>Minimum length = 1</td></tr><tr><td>password</td><td>&lt;String></td><td>Read-write</td><td>Password for logging on to the database. Must be the same as the password specified in the database.<br>Minimum length = 1</td></tr><tr><td>loggedin</td><td>&lt;Boolean></td><td>Read-write</td><td>Display the names of all database users currently logged on to the NetScaler appliance.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>username</td><td>&lt;String></td><td>Read-write</td><td>Name of the database user. Must be the same as the user name specified in the database.<br>Minimum length = 1</td></tr><tr><td>password</td><td>&lt;String></td><td>Read-write</td><td>Password for logging on to the database. Must be the same as the password specified in the database.<br>Minimum length = 1</td></tr><tr><td>loggedin</td><td>&lt;Boolean></td><td>Read-write</td><td>Display the names of all database users currently logged on to the Citrix ADC.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

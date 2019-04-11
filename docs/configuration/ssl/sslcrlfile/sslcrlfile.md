@@ -7,12 +7,12 @@ Configuration for Imported crl files resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the imported CRL file. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. The following requirement applies only to the NetScaler CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my file" or 'my file').<br>Minimum length = 1<br>Maximum length = 31</td></tr><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>URL specifying the protocol, host, and path, including file name to the CRL file to be imported. For example, http://www.example.com/crl_file.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name to assign to the imported CRL file. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. The following requirement applies only to the Citrix ADC CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my file" or 'my file').<br>Minimum length = 1<br>Maximum length = 31</td></tr><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>URL specifying the protocol, host, and path, including file name to the CRL file to be imported. For example, http://www.example.com/crl_file.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[IMPORT](#i)| [DELETE](#d)| [GET (ALL)](#get-)| [COUNT](#)
+[IMPORT](#i)| [DELETE](#d)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

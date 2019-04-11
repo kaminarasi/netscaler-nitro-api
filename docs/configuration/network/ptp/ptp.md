@@ -12,7 +12,7 @@ Configuration for Precision Time Protocol resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [GET (ALL)](#get-)
+[UPDATE](#u)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

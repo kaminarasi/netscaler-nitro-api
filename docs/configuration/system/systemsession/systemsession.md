@@ -12,7 +12,7 @@ Configuration for system session resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[KILL]()| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[KILL]()| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

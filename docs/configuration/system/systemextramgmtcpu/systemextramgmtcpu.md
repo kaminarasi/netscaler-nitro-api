@@ -7,12 +7,12 @@ Configuration for 0 resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>configuredstate</td><td>&lt;String></td><td>Read-only</td><td>Get the configured state of extra manahement cpu.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>effectivestate</td><td>&lt;String></td><td>Read-only</td><td>Get the current running state of extra management cpu.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>nodeid</td><td>&lt;Double></td><td>Read-write</td><td>Unique number that identifies the cluster node.<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>configuredstate</td><td>&lt;String></td><td>Read-only</td><td>Get the configured state of extra manahement cpu.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>effectivestate</td><td>&lt;String></td><td>Read-only</td><td>Get the current running state of extra management cpu.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ENABLE](#e)| [DISABLE](#di)| [GET (ALL)](#get-)
+[ENABLE](#e)| [DISABLE](#di)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -58,6 +58,13 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/systemextramgmtcpu
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/systemextramgmtcpu?<b>args=nodeid:&lt;Double_value&gt;</b>
+Use this query-parameter to get systemextramgmtcpu resources based on additional properties.
+
+
+
 <b>HTTP Method:</b>GET
 <b>Request Headers:</b>
 
@@ -68,7 +75,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "systemextramgmtcpu": [ {"configuredstate":<String_value>,"effectivestate":<String_value>}]}```
+<b>Response Payload: </b>```{ "systemextramgmtcpu": [ {nodeid:<Double_value>"configuredstate":<String_value>,"effectivestate":<String_value>}]}```
 
 
 

@@ -7,12 +7,12 @@ Configuration for community resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>communityname</td><td>&lt;String></td><td>Read-write</td><td>The SNMP community string. Can consist of 1 to 31 characters that include uppercase and lowercase letters,numbers and special characters.<br><br>The following requirement applies only to the NetScaler CLI:<br>If the string includes one or more spaces, enclose the name in double or single quotation marks (for example, "my string" or 'my string').<br>Minimum length = 1</td></tr><tr><td>permissions</td><td>&lt;String></td><td>Read-write</td><td>The SNMP V1 or V2 query-type privilege that you want to associate with this SNMP community.<br>Possible values = GET, GET_NEXT, GET_BULK, SET, ALL</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>communityname</td><td>&lt;String></td><td>Read-write</td><td>The SNMP community string. Can consist of 1 to 31 characters that include uppercase and lowercase letters,numbers and special characters.<br><br>The following requirement applies only to the Citrix ADC CLI:<br>If the string includes one or more spaces, enclose the name in double or single quotation marks (for example, "my string" or 'my string').<br>Minimum length = 1</td></tr><tr><td>permissions</td><td>&lt;String></td><td>Read-write</td><td>The SNMP V1 or V2 query-type privilege that you want to associate with this SNMP community.<br>Possible values = GET, GET_NEXT, GET_BULK, SET, ALL</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

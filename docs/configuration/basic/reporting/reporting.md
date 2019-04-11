@@ -12,7 +12,7 @@ Configuration for reporting resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ENABLE](#e)| [DISABLE](#di)| [GET (ALL)](#get-)
+[ENABLE](#e)| [DISABLE](#di)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

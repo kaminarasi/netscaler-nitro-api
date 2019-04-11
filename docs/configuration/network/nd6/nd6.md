@@ -12,7 +12,7 @@ Configuration for nd6 resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [CLEAR](#)| [DELETE](#d)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [CLEAR](#)| [DELETE](#d)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

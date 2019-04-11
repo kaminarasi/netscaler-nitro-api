@@ -12,7 +12,7 @@ Configuration for learning data resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[DELETE](#d)| [RESET](#)| [EXPORT](#e)| [GET (ALL)](#get-)| [COUNT](#)
+[DELETE](#d)| [RESET](#)| [EXPORT](#e)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

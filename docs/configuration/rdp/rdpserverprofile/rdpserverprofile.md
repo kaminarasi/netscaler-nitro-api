@@ -7,12 +7,12 @@ Configuration for RDP serverprofile resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the rdp server profile.<br>Minimum length = 1<br>Maximum length = 32</td></tr><tr><td>rdpip</td><td>&lt;String></td><td>Read-write</td><td>IPv4 or IPv6 address of RDP listener. This terminates client RDP connections.<br>Minimum length = 1</td></tr><tr><td>rdpport</td><td>&lt;Double></td><td>Read-write</td><td>TCP port on which the RDP connection is established.<br>Default value: 3389<br>Minimum value = 1<br>Maximum value = 65535</td></tr><tr><td>psk</td><td>&lt;String></td><td>Read-write</td><td>Pre shared key value.</td></tr><tr><td>builtin</td><td>&lt;String[]></td><td>Read-only</td><td>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.<br>Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the rdp server profile.<br>Minimum length = 1<br>Maximum length = 32</td></tr><tr><td>rdpip</td><td>&lt;String></td><td>Read-write</td><td>IPv4 or IPv6 address of RDP listener. This terminates client RDP connections.<br>Minimum length = 1</td></tr><tr><td>rdpport</td><td>&lt;Double></td><td>Read-write</td><td>TCP port on which the RDP connection is established.<br>Default value: 3389<br>Minimum value = 1<br>Maximum value = 65535</td></tr><tr><td>psk</td><td>&lt;String></td><td>Read-write</td><td>Pre shared key value.</td></tr><tr><td>rdpredirection</td><td>&lt;String></td><td>Read-write</td><td>Enable/Disable RDP redirection support. This needs to be enabled in presence of connection broker or session directory with IP cookie(msts cookie) based redirection support.<br>Default value: DISABLE<br>Possible values = ENABLE, DISABLE</td></tr><tr><td>builtin</td><td>&lt;String[]></td><td>Read-only</td><td>Indicates that a variable is a built-in (SYSTEM INTERNAL) type.<br>Possible values = MODIFIABLE, DELETABLE, IMMUTABLE, PARTITION_ALL</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [UPDATE](#u)| [UNSET](#)| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [UPDATE](#u)| [UNSET](#)| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":<String_value>,"rdpport":<Double_value>,<b>"psk":<String_value></b>}}```
+<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":<String_value>,"rdpport":<Double_value>,<b>"psk":<String_value>,</b>"rdpredirection":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -48,7 +48,7 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>}}```
+<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>,"rdpredirection":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -63,7 +63,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":true,"rdpport":true,"psk":true}}```
+<b>Request Payload: </b>```{"rdpserverprofile":{<b>"name":<String_value>,</b>"rdpip":true,"rdpport":true,"psk":true,"rdpredirection":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -119,7 +119,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "rdpserverprofile": [ {"name":<String_value>,"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>,"builtin":<String[]_value>}]}```
+<b>Response Payload: </b>```{ "rdpserverprofile": [ {"name":<String_value>,"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>,"rdpredirection":<String_value>,"builtin":<String[]_value>}]}```
 
 
 
@@ -150,7 +150,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "rdpserverprofile": [ {"name":<String_value>,"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>,"builtin":<String[]_value>}]}```
+<b>Response Payload: </b>```{ "rdpserverprofile": [ {"name":<String_value>,"rdpip":<String_value>,"rdpport":<Double_value>,"psk":<String_value>,"rdpredirection":<String_value>,"builtin":<String[]_value>}]}```
 
 
 

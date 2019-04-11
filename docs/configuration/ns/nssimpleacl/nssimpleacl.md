@@ -12,7 +12,7 @@ Configuration for simple ACL resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [CLEAR](#)| [DELETE](#d)| [FLUSH](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [CLEAR](#)| [DELETE](#d)| [FLUSH](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

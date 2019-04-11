@@ -12,7 +12,7 @@ Configuration for cache object resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[EXPIRE](#e)| [FLUSH](#)| [SAVE]()| [GET (ALL)](#get-)| [COUNT](#)
+[EXPIRE](#e)| [FLUSH](#)| [SAVE]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

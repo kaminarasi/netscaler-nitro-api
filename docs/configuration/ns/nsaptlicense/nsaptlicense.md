@@ -12,7 +12,7 @@ Configuration for aptlicense resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[CHANGE](#c)| [GET (ALL)](#get-)| [COUNT](#)
+[CHANGE](#c)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

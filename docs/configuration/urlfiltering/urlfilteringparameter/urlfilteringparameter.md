@@ -7,12 +7,12 @@ Configuration for URLFILTERING paramter resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hoursbetweendbupdates</td><td>&lt;Double></td><td>Read-write</td><td>URL Filtering hours between DB updates.<br>Minimum value = 0<br>Maximum value = 720</td></tr><tr><td>timeofdaytoupdatedb</td><td>&lt;String></td><td>Read-write</td><td>URL Filtering time of day to update DB.</td></tr><tr><td>localdatabasethreads</td><td>&lt;Double></td><td>Read-write</td><td>URL Filtering Local DB number of threads.<br>Minimum value = 1<br>Maximum value = 4</td></tr><tr><td>maxnumberofcloudthreads</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering hours between DB updates.<br>Minimum value = 1<br>Maximum value = 128</td></tr><tr><td>cloudkeepalivetimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud keep alive timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>cloudserverconnecttimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud server connect timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>clouddblookuptimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering CloudDB send/receive timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>proxyhostip</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy HostIp.<br>Minimum length = 1</td></tr><tr><td>proxyport</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud Proxy Port.</td></tr><tr><td>proxyusername</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy Username.<br>Minimum length = 1</td></tr><tr><td>proxypassword</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy Password.<br>Minimum length = 1</td></tr><tr><td>seeddbsizelevel</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Seed DB Size Level to get downloaded.<br>Minimum value = 1<br>Maximum value = 5</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hoursbetweendbupdates</td><td>&lt;Double></td><td>Read-write</td><td>URL Filtering hours between DB updates.<br>Minimum value = 0<br>Maximum value = 720</td></tr><tr><td>timeofdaytoupdatedb</td><td>&lt;String></td><td>Read-write</td><td>URL Filtering time of day to update DB.</td></tr><tr><td>localdatabasethreads</td><td>&lt;Double></td><td>Read-write</td><td>URL Filtering Local DB number of threads.<br>Minimum value = 1<br>Maximum value = 4</td></tr><tr><td>cloudhost</td><td>&lt;String></td><td>Read-write</td><td>URL Filtering Cloud host.</td></tr><tr><td>seeddbpath</td><td>&lt;String></td><td>Read-write</td><td>URL Filtering Seed DB path.</td></tr><tr><td>maxnumberofcloudthreads</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering hours between DB updates.<br>Minimum value = 1<br>Maximum value = 128</td></tr><tr><td>cloudkeepalivetimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud keep alive timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>cloudserverconnecttimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud server connect timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>clouddblookuptimeout</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering CloudDB send/receive timeout in msec.<br>Minimum value = 1000<br>Maximum value = 600000</td></tr><tr><td>proxyhostip</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy HostIp.<br>Minimum length = 1</td></tr><tr><td>proxyport</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Cloud Proxy Port.</td></tr><tr><td>proxyusername</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy Username.<br>Minimum length = 1</td></tr><tr><td>proxypassword</td><td>&lt;String></td><td>Read-only</td><td>URL Filtering Cloud Proxy Password.<br>Minimum length = 1</td></tr><tr><td>seeddbsizelevel</td><td>&lt;Double></td><td>Read-only</td><td>URL Filtering Seed DB Size Level to get downloaded.<br>Minimum value = 1<br>Maximum value = 5</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"urlfilteringparameter":{"hoursbetweendbupdates":<Double_value>,"timeofdaytoupdatedb":<String_value>,"localdatabasethreads":<Double_value>}}```
+<b>Request Payload: </b>```{"urlfilteringparameter":{"hoursbetweendbupdates":<Double_value>,"timeofdaytoupdatedb":<String_value>,"localdatabasethreads":<Double_value>,"cloudhost":<String_value>,"seeddbpath":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -48,7 +48,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"urlfilteringparameter":{"hoursbetweendbupdates":true,"timeofdaytoupdatedb":true,"localdatabasethreads":true}}```
+<b>Request Payload: </b>```{"urlfilteringparameter":{"hoursbetweendbupdates":true,"timeofdaytoupdatedb":true,"localdatabasethreads":true,"cloudhost":true,"seeddbpath":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -68,7 +68,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "urlfilteringparameter": [ {"hoursbetweendbupdates":<Double_value>,"timeofdaytoupdatedb":<String_value>,"maxnumberofcloudthreads":<Double_value>,"cloudkeepalivetimeout":<Double_value>,"cloudserverconnecttimeout":<Double_value>,"clouddblookuptimeout":<Double_value>,"proxyhostip":<String_value>,"proxyport":<Double_value>,"proxyusername":<String_value>,"proxypassword":<String_value>,"seeddbsizelevel":<Double_value>,"localdatabasethreads":<Double_value>}]}```
+<b>Response Payload: </b>```{ "urlfilteringparameter": [ {"hoursbetweendbupdates":<Double_value>,"timeofdaytoupdatedb":<String_value>,"maxnumberofcloudthreads":<Double_value>,"cloudkeepalivetimeout":<Double_value>,"cloudserverconnecttimeout":<Double_value>,"clouddblookuptimeout":<Double_value>,"proxyhostip":<String_value>,"proxyport":<Double_value>,"proxyusername":<String_value>,"proxypassword":<String_value>,"seeddbsizelevel":<Double_value>,"localdatabasethreads":<Double_value>,"cloudhost":<String_value>,"seeddbpath":<String_value>}]}```
 
 
 

@@ -12,7 +12,7 @@ Configuration for dns key resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [CREATE](#c)| [UPDATE](#u)| [UNSET](#)| [DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [CREATE](#c)| [UPDATE](#u)| [UNSET](#)| [DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

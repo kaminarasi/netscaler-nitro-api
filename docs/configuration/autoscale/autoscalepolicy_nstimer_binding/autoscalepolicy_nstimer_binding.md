@@ -7,12 +7,12 @@ Binding object showing the nstimer that can be bound to autoscalepolicy.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>boundto</td><td>&lt;String></td><td>Read-write</td><td>Location where policy is bound.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>priority</td><td>&lt;Double></td><td>Read-only</td><td>Specifies the priority of the policy.</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-only</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>activepolicy</td><td>&lt;Integer></td><td>Read-only</td><td>Indicates whether policy is bound or not.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>boundto</td><td>&lt;String></td><td>Read-write</td><td>Location where policy is bound.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>priority</td><td>&lt;Double></td><td>Read-only</td><td>Specifies the priority of the policy.</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-only</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -50,7 +50,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "autoscalepolicy_nstimer_binding": [ {"boundto":<String_value>,"name":<String_value>,"priority":<Double_value>,"gotopriorityexpression":<String_value>,"activepolicy":<Integer_value>}]}```
+<b>Response Payload: </b>```{ "autoscalepolicy_nstimer_binding": [ {"boundto":<String_value>,"name":<String_value>,"priority":<Double_value>,"gotopriorityexpression":<String_value>}]}```
 
 
 
@@ -76,7 +76,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "autoscalepolicy_nstimer_binding": [ {"boundto":<String_value>,"name":<String_value>,"priority":<Double_value>,"gotopriorityexpression":<String_value>,"activepolicy":<Integer_value>}]}```
+<b>Response Payload: </b>```{ "autoscalepolicy_nstimer_binding": [ {"boundto":<String_value>,"name":<String_value>,"priority":<Double_value>,"gotopriorityexpression":<String_value>}]}```
 
 
 

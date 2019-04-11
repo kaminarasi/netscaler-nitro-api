@@ -7,12 +7,12 @@ Configuration for capacity resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>bandwidth</td><td>&lt;Double></td><td>Read-write</td><td>System bandwidth limit.</td></tr><tr><td>edition</td><td>&lt;String></td><td>Read-write</td><td>Product edition.<br>Possible values = Standard, Enterprise, Platinum</td></tr><tr><td>unit</td><td>&lt;String></td><td>Read-write</td><td>Bandwidth unit.<br>Possible values = Gbps, Mbps</td></tr><tr><td>platform</td><td>&lt;String></td><td>Read-write</td><td>appliance platform type.<br>Possible values = VS10, VE10, VP10, VS25, VE25, VP25, VS200, VE200, VP200, VS1000, VE1000, VP1000, VS3000, VE3000, VP3000, VS5000, VE5000, VP5000, VS8000, VE8000, VP8000, VS10000, VE10000, VP10000, VS15000, VE15000, VP15000, VS25000, VE25000, VP25000, VS40000, VE40000, VP40000, VS100000, VE100000, VP100000, CP1000</td></tr><tr><td>nodeid</td><td>&lt;Double></td><td>Read-write</td><td>Unique number that identifies the cluster node.<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>actualbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Bandwith in MBPS.</td></tr><tr><td>maxbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Bandwidth.</td></tr><tr><td>minbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Minimum Bandwidth.</td></tr><tr><td>instancecount</td><td>&lt;Double></td><td>Read-only</td><td>VPX will consume one instance and MPX will consume zero instance.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>bandwidth</td><td>&lt;Double></td><td>Read-write</td><td>System bandwidth limit.</td></tr><tr><td>platform</td><td>&lt;String></td><td>Read-write</td><td>appliance platform type.<br>Possible values = VS10, VE10, VP10, VS25, VE25, VP25, VS200, VE200, VP200, VS1000, VE1000, VP1000, VS3000, VE3000, VP3000, VS5000, VE5000, VP5000, VS8000, VE8000, VP8000, VS10000, VE10000, VP10000, VS15000, VE15000, VP15000, VS25000, VE25000, VP25000, VS40000, VE40000, VP40000, VS100000, VE100000, VP100000, CP1000</td></tr><tr><td>vcpu</td><td>&lt;Boolean></td><td>Read-write</td><td>licensed using vcpu pool.</td></tr><tr><td>edition</td><td>&lt;String></td><td>Read-write</td><td>Product edition.<br>Possible values = Standard, Enterprise, Platinum</td></tr><tr><td>unit</td><td>&lt;String></td><td>Read-write</td><td>Bandwidth unit.<br>Possible values = Gbps, Mbps</td></tr><tr><td>nodeid</td><td>&lt;Double></td><td>Read-write</td><td>Unique number that identifies the cluster node.<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>actualbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Bandwith in MBPS.</td></tr><tr><td>vcpucount</td><td>&lt;Double></td><td>Read-only</td><td>number of vCPUs licensed.<br>Minimum value = 1<br>Maximum value = 20</td></tr><tr><td>maxvcpucount</td><td>&lt;Double></td><td>Read-only</td><td>number of max vCPUs.<br>Minimum value = 1<br>Maximum value = 20</td></tr><tr><td>maxbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Bandwidth.</td></tr><tr><td>minbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Minimum Bandwidth.</td></tr><tr><td>instancecount</td><td>&lt;Double></td><td>Read-only</td><td>VPX will consume one instance and MPX will consume zero instance.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"nscapacity":{"bandwidth":<Double_value>,"edition":<String_value>,"unit":<String_value>,"platform":<String_value>}}```
+<b>Request Payload: </b>```{"nscapacity":{"bandwidth":<Double_value>,"platform":<String_value>,"vcpu":<Boolean_value>,"edition":<String_value>,"unit":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -48,7 +48,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"nscapacity":{"bandwidth":true,"platform":true}}```
+<b>Request Payload: </b>```{"nscapacity":{"bandwidth":true,"platform":true,"vcpu":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -75,7 +75,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "nscapacity": [ {nodeid:<Double_value>"actualbandwidth":<Double_value>,"platform":<String_value>,"edition":<String_value>,"unit":<String_value>,"bandwidth":<Double_value>,"maxbandwidth":<Double_value>,"minbandwidth":<Double_value>,"instancecount":<Double_value>}]}```
+<b>Response Payload: </b>```{ "nscapacity": [ {nodeid:<Double_value>"actualbandwidth":<Double_value>,"platform":<String_value>,"vcpucount":<Double_value>,"maxvcpucount":<Double_value>,"edition":<String_value>,"unit":<String_value>,"bandwidth":<Double_value>,"maxbandwidth":<Double_value>,"minbandwidth":<Double_value>,"instancecount":<Double_value>}]}```
 
 
 

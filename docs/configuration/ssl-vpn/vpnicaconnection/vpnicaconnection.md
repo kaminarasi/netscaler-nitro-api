@@ -12,7 +12,7 @@ Configuration for active ica connections resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[KILL]()| [GET (ALL)](#get-)| [COUNT](#)
+[KILL]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

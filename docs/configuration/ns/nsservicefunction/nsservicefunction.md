@@ -7,12 +7,12 @@ Configuration for service Function resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>servicefunctionname</td><td>&lt;String></td><td>Read-write</td><td>Name of the service function to be created. Leading character must be a number or letter. Other characters allowed, after the first character, are @ _ - . (period) : (colon) # and space ( ).<br>Minimum length = 1</td></tr><tr><td>ingressvlan</td><td>&lt;Double></td><td>Read-write</td><td>VLAN ID on which the traffic from service function reaches Netscaler.<br>Minimum value = 1<br>Maximum value = 4094</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>servicefunctionname</td><td>&lt;String></td><td>Read-write</td><td>Name of the service function to be created. Leading character must be a number or letter. Other characters allowed, after the first character, are @ _ - . (period) : (colon) # and space ( ).<br>Minimum length = 1</td></tr><tr><td>ingressvlan</td><td>&lt;Double></td><td>Read-write</td><td>VLAN ID on which the traffic from service function reaches Citrix ADC.<br>Minimum value = 1<br>Maximum value = 4094</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [UPDATE](#u)| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [UPDATE](#u)| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

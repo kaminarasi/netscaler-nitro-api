@@ -3,6 +3,11 @@
 Configuration for ACL entry resource.
 
 
+##Properties 
+<span>(click to see [Operations](#opera))</span>
+
+
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>&lt;String></td><td>Read-write</td><td>Type of the acl ,default will be CLASSIC.<br>Available options as follows:<br>* CLASSIC - specifies the regular extended acls.<br>* DFD - cluster specific acls,specifies hashmethod for steering of the packet in cluster .<br>Default value: CLASSIC<br>Possible values = CLASSIC, DFD</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
@@ -28,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"nsacls":{}}```
+<b>Request Payload: </b>```{"nsacls":{"type":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -43,7 +48,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"nsacls":{}}```
+<b>Request Payload: </b>```{"nsacls":{"type":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -58,7 +63,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"nsacls":{}}```
+<b>Request Payload: </b>```{"nsacls":{"type":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 

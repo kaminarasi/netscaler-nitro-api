@@ -7,12 +7,12 @@ Configuration for NTP parameter resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>authentication</td><td>&lt;String></td><td>Read-write</td><td>Apply NTP authentication, which enables the NTP client (NetScaler) to verify that the server is in fact known and trusted.<br>Default value: YES<br>Possible values = YES, NO</td></tr><tr><td>trustedkey</td><td>&lt;Double[]></td><td>Read-write</td><td>Key identifiers that are trusted for server authentication with symmetric key cryptography in the keys file.<br>Minimum value = 1<br>Maximum value = 65534</td></tr><tr><td>autokeylogsec</td><td>&lt;Double></td><td>Read-write</td><td>Autokey protocol requires the keys to be refreshed periodically. This parameter specifies the interval between regenerations of new session keys. In seconds, expressed as a power of 2.<br>Default value: 12<br>Minimum value = 0<br>Maximum value = 32</td></tr><tr><td>revokelogsec</td><td>&lt;Double></td><td>Read-write</td><td>Interval between re-randomizations of the autokey seeds to prevent brute-force attacks on the autokey algorithms.<br>Default value: 16<br>Minimum value = 0<br>Maximum value = 32</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>authentication</td><td>&lt;String></td><td>Read-write</td><td>Apply NTP authentication, which enables the NTP client (Citrix ADC) to verify that the server is in fact known and trusted.<br>Default value: YES<br>Possible values = YES, NO</td></tr><tr><td>trustedkey</td><td>&lt;Double[]></td><td>Read-write</td><td>Key identifiers that are trusted for server authentication with symmetric key cryptography in the keys file.<br>Minimum value = 1<br>Maximum value = 65534</td></tr><tr><td>autokeylogsec</td><td>&lt;Double></td><td>Read-write</td><td>Autokey protocol requires the keys to be refreshed periodically. This parameter specifies the interval between regenerations of new session keys. In seconds, expressed as a power of 2.<br>Default value: 12<br>Minimum value = 0<br>Maximum value = 32</td></tr><tr><td>revokelogsec</td><td>&lt;Double></td><td>Read-write</td><td>Interval between re-randomizations of the autokey seeds to prevent brute-force attacks on the autokey algorithms.<br>Default value: 16<br>Minimum value = 0<br>Maximum value = 32</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

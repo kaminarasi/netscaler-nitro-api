@@ -7,12 +7,12 @@ Configuration for hardware resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hwdescription</td><td>&lt;String></td><td>Read-only</td><td>Hardware and it's ports detail.</td></tr><tr><td>sysid</td><td>&lt;Double></td><td>Read-only</td><td>System id.</td></tr><tr><td>manufactureday</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing day.</td></tr><tr><td>manufacturemonth</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing month.</td></tr><tr><td>manufactureyear</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing year.</td></tr><tr><td>cpufrequncy</td><td>&lt;Integer></td><td>Read-only</td><td>CPU Frequency.</td></tr><tr><td>hostid</td><td>&lt;Integer></td><td>Read-only</td><td>host id.</td></tr><tr><td>host</td><td>&lt;String></td><td>Read-only</td><td>host id.</td></tr><tr><td>serialno</td><td>&lt;String></td><td>Read-only</td><td>Serial no.</td></tr><tr><td>encodedserialno</td><td>&lt;String></td><td>Read-only</td><td>Encoded serial no.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hwdescription</td><td>&lt;String></td><td>Read-only</td><td>Hardware and it's ports detail.</td></tr><tr><td>sysid</td><td>&lt;Double></td><td>Read-only</td><td>System id.</td></tr><tr><td>manufactureday</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing day.</td></tr><tr><td>manufacturemonth</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing month.</td></tr><tr><td>manufactureyear</td><td>&lt;Integer></td><td>Read-only</td><td>Manufacturing year.</td></tr><tr><td>cpufrequncy</td><td>&lt;Integer></td><td>Read-only</td><td>CPU Frequency.</td></tr><tr><td>hostid</td><td>&lt;Integer></td><td>Read-only</td><td>host id.</td></tr><tr><td>host</td><td>&lt;String></td><td>Read-only</td><td>host id.</td></tr><tr><td>serialno</td><td>&lt;String></td><td>Read-only</td><td>Serial no.</td></tr><tr><td>encodedserialno</td><td>&lt;String></td><td>Read-only</td><td>Encoded serial no.</td></tr><tr><td>netscaleruuid</td><td>&lt;String></td><td>Read-only</td><td>Citrix ADC UUID.</td></tr><tr><td>bmcrevision</td><td>&lt;String></td><td>Read-only</td><td>BMC Firmware Revision.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)
+[GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -38,7 +38,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "nshardware": [ {"hwdescription":<String_value>,"sysid":<Double_value>,"manufactureday":<Integer_value>,"manufacturemonth":<Integer_value>,"manufactureyear":<Integer_value>,"cpufrequncy":<Integer_value>,"hostid":<Integer_value>,"host":<String_value>,"serialno":<String_value>,"encodedserialno":<String_value>}]}```
+<b>Response Payload: </b>```{ "nshardware": [ {"hwdescription":<String_value>,"sysid":<Double_value>,"manufactureday":<Integer_value>,"manufacturemonth":<Integer_value>,"manufactureyear":<Integer_value>,"cpufrequncy":<Integer_value>,"hostid":<Integer_value>,"host":<String_value>,"serialno":<String_value>,"encodedserialno":<String_value>,"netscaleruuid":<String_value>,"bmcrevision":<String_value>}]}```
 
 
 

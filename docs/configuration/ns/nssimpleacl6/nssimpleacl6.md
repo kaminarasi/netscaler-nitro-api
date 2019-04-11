@@ -12,7 +12,7 @@ Configuration for simple ACL6 resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [CLEAR](#)| [FLUSH](#)| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [CLEAR](#)| [FLUSH](#)| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

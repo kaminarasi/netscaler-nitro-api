@@ -7,7 +7,7 @@ Configuration for RNAT session resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>network</td><td>&lt;String></td><td>Read-write</td><td>IPv4 network address on whose traffic you want the NetScaler appliance to do RNAT processing.<br>Minimum length = 1</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>Subnet mask associated with the network address.<br>Minimum length = 1</td></tr><tr><td>natip</td><td>&lt;String></td><td>Read-write</td><td>The NAT IP address defined for the RNAT entry.<br>Minimum length = 1</td></tr><tr><td>aclname</td><td>&lt;String></td><td>Read-write</td><td>Name of any configured extended ACL whose action is ALLOW.<br>Minimum length = 1</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>network</td><td>&lt;String></td><td>Read-write</td><td>IPv4 network address on whose traffic you want the Citrix ADC to do RNAT processing.<br>Minimum length = 1</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>Subnet mask associated with the network address.<br>Minimum length = 1</td></tr><tr><td>natip</td><td>&lt;String></td><td>Read-write</td><td>The NAT IP address defined for the RNAT entry.<br>Minimum length = 1</td></tr><tr><td>aclname</td><td>&lt;String></td><td>Read-write</td><td>Name of any configured extended ACL whose action is ALLOW.<br>Minimum length = 1</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 

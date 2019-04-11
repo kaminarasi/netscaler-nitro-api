@@ -7,12 +7,12 @@ Binding object which returns the resources bound to gslbdomain.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the Domain.<br>Minimum length = 1</td></tr><tr><td>gslbdomain_gslbservice_binding</td><td>&lt;gslbdomain_gslbservice_binding[]></td><td>Read-only</td><td>gslbservice that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_lbmonitor_binding</td><td>&lt;gslbdomain_lbmonitor_binding[]></td><td>Read-only</td><td>lbmonitor that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_gslbvserver_binding</td><td>&lt;gslbdomain_gslbvserver_binding[]></td><td>Read-only</td><td>gslbvserver that can be bound to gslbdomain.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the Domain.<br>Minimum length = 1</td></tr><tr><td>gslbdomain_gslbservicegroup_binding</td><td>&lt;gslbdomain_gslbservicegroup_binding[]></td><td>Read-only</td><td>gslbservicegroup that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_gslbservice_binding</td><td>&lt;gslbdomain_gslbservice_binding[]></td><td>Read-only</td><td>gslbservice that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_lbmonitor_binding</td><td>&lt;gslbdomain_lbmonitor_binding[]></td><td>Read-only</td><td>lbmonitor that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_gslbservicegroupmember_binding</td><td>&lt;gslbdomain_gslbservicegroupmember_binding[]></td><td>Read-only</td><td>gslbservicegroupmember that can be bound to gslbdomain.</td></tr><tr><td>gslbdomain_gslbvserver_binding</td><td>&lt;gslbdomain_gslbvserver_binding[]></td><td>Read-only</td><td>gslbvserver that can be bound to gslbdomain.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)
+[GET]()| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -38,7 +38,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "gslbdomain_binding": [ {"name":<String_value>,"gslbdomain_lbmonitor_binding":<gslbdomain_lbmonitor_binding[]_value>,"gslbdomain_gslbvserver_binding":<gslbdomain_gslbvserver_binding[]_value>,"gslbdomain_gslbservice_binding":<gslbdomain_gslbservice_binding[]_value>}]}```
+<b>Response Payload: </b>```{ "gslbdomain_binding": [ {"name":<String_value>,"gslbdomain_gslbservicegroup_binding":<gslbdomain_gslbservicegroup_binding[]_value>,"gslbdomain_gslbservicegroupmember_binding":<gslbdomain_gslbservicegroupmember_binding[]_value>,"gslbdomain_lbmonitor_binding":<gslbdomain_lbmonitor_binding[]_value>,"gslbdomain_gslbvserver_binding":<gslbdomain_gslbvserver_binding[]_value>,"gslbdomain_gslbservice_binding":<gslbdomain_gslbservice_binding[]_value>}]}```
 
 
 
@@ -64,7 +64,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "gslbdomain_binding": [ {"name":<String_value>,"gslbdomain_lbmonitor_binding":<gslbdomain_lbmonitor_binding[]_value>,"gslbdomain_gslbvserver_binding":<gslbdomain_gslbvserver_binding[]_value>,"gslbdomain_gslbservice_binding":<gslbdomain_gslbservice_binding[]_value>}]}```
+<b>Response Payload: </b>```{ "gslbdomain_binding": [ {"name":<String_value>,"gslbdomain_gslbservicegroup_binding":<gslbdomain_gslbservicegroup_binding[]_value>,"gslbdomain_gslbservicegroupmember_binding":<gslbdomain_gslbservicegroupmember_binding[]_value>,"gslbdomain_lbmonitor_binding":<gslbdomain_lbmonitor_binding[]_value>,"gslbdomain_gslbvserver_binding":<gslbdomain_gslbvserver_binding[]_value>,"gslbdomain_gslbservice_binding":<gslbdomain_gslbservice_binding[]_value>}]}```
 
 
 

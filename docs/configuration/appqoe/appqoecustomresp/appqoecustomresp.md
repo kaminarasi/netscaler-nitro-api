@@ -12,7 +12,7 @@ Configuration for AppQoE custom response page resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[IMPORT](#i)| [DELETE](#d)| [CHANGE](#c)| [GET (ALL)](#get-)| [COUNT](#)
+[IMPORT](#i)| [DELETE](#d)| [CHANGE](#c)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

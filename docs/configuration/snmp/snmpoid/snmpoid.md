@@ -7,12 +7,12 @@ Configuration for SNMP Object Identifier resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>entitytype</td><td>&lt;String></td><td>Read-write</td><td>The type of entity whose SNMP OIDs you want to displayType of entity whose SNMP OIDs you want the NetScaler appliance to display.<br>Possible values = VSERVER, SERVICE, SERVICEGROUP</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the entity whose SNMP OID you want the NetScaler appliance to display.<br>Minimum length = 1</td></tr><tr><td>Snmpoid</td><td>&lt;String></td><td>Read-only</td><td>The snmp oid.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>entitytype</td><td>&lt;String></td><td>Read-write</td><td>The type of entity whose SNMP OIDs you want to displayType of entity whose SNMP OIDs you want the Citrix ADC to display.<br>Possible values = VSERVER, SERVICE, SERVICEGROUP</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the entity whose SNMP OID you want the Citrix ADC to display.<br>Minimum length = 1</td></tr><tr><td>Snmpoid</td><td>&lt;String></td><td>Read-only</td><td>The snmp oid.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [COUNT](#)
+[GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

@@ -7,12 +7,12 @@ Statistics for admin partition resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>partitionname</td><td>&lt;String></td><td>Read-write</td><td>Name of the partition.<br>Minimum length = 1</td></tr><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>minbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Minimum Bandwidth required by the partition.</td></tr><tr><td>maxbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Banwidth allowed for the partition.</td></tr><tr><td>maxconnection</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Connection allowed for the partition.</td></tr><tr><td>maxmemory</td><td>&lt;Double></td><td>Read-only</td><td>Maximum memory limit for the partition.</td></tr><tr><td>currentbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Current Bandwidth usage for the partition.</td></tr><tr><td>currentconnections</td><td>&lt;Double></td><td>Read-only</td><td>Current Connections on this partition.</td></tr><tr><td>memoryusagepcnt</td><td>&lt;Double></td><td>Read-only</td><td>Memory usage(%) on this partition.</td></tr><tr><td>totaldrops</td><td>&lt;Double></td><td>Read-only</td><td>Total packet drops for the partition.</td></tr><tr><td>dropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totaldrops</td></tr><tr><td>totaltokendrops</td><td>&lt;Double></td><td>Read-only</td><td>Total drops(KB) for the partition.</td></tr><tr><td>tokendropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totaltokendrops</td></tr><tr><td>totalconnectiondrops</td><td>&lt;Double></td><td>Read-only</td><td>Total connection drops for the partition.</td></tr><tr><td>connectiondropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totalconnectiondrops</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>partitionname</td><td>&lt;String></td><td>Read-write</td><td>Name of the partition.<br>Minimum length = 1</td></tr><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>maxbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Banwidth allowed for the partition.</td></tr><tr><td>maxconnection</td><td>&lt;Double></td><td>Read-only</td><td>Maximum Connection allowed for the partition.</td></tr><tr><td>maxmemory</td><td>&lt;Double></td><td>Read-only</td><td>Maximum memory limit for the partition.</td></tr><tr><td>currentbandwidth</td><td>&lt;Double></td><td>Read-only</td><td>Current Bandwidth usage for the partition.</td></tr><tr><td>currentconnections</td><td>&lt;Double></td><td>Read-only</td><td>Current Connections on this partition.</td></tr><tr><td>memoryusagepcnt</td><td>&lt;Double></td><td>Read-only</td><td>Memory usage(%) on this partition.</td></tr><tr><td>totaldrops</td><td>&lt;Double></td><td>Read-only</td><td>Total packet drops for the partition.</td></tr><tr><td>dropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totaldrops</td></tr><tr><td>totaltokendrops</td><td>&lt;Double></td><td>Read-only</td><td>Total drops(KB) for the partition.</td></tr><tr><td>tokendropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totaltokendrops</td></tr><tr><td>totalconnectiondrops</td><td>&lt;Double></td><td>Read-only</td><td>Total connection drops for the partition.</td></tr><tr><td>connectiondropsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for totalconnectiondrops</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [GET]()
+[GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:
@@ -45,7 +45,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "nspartition": [ {"partitionname":<String_value>,"tokendropsrate":<Double_value>,"totaltokendrops":<Double_value>,"totaldrops":<Double_value>,"dropsrate":<Double_value>,"totalconnectiondrops":<Double_value>,"currentconnections":<Double_value>,"minbandwidth":<Double_value>,"currentbandwidth":<Double_value>,"maxconnection":<Double_value>,"maxbandwidth":<Double_value>,"connectiondropsrate":<Double_value>,"maxmemory":<Double_value>,"memoryusagepcnt":<Double_value>}]}```
+<b>Response Payload: </b>```{ "nspartition": [ {"partitionname":<String_value>,"tokendropsrate":<Double_value>,"totaltokendrops":<Double_value>,"totaldrops":<Double_value>,"dropsrate":<Double_value>,"totalconnectiondrops":<Double_value>,"currentconnections":<Double_value>,"currentbandwidth":<Double_value>,"maxconnection":<Double_value>,"maxbandwidth":<Double_value>,"connectiondropsrate":<Double_value>,"maxmemory":<Double_value>,"memoryusagepcnt":<Double_value>}]}```
 
 
 
@@ -64,7 +64,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "nspartition": [ {"partitionname":<String_value>,"tokendropsrate":<Double_value>,"totaltokendrops":<Double_value>,"totaldrops":<Double_value>,"dropsrate":<Double_value>,"totalconnectiondrops":<Double_value>,"currentconnections":<Double_value>,"minbandwidth":<Double_value>,"currentbandwidth":<Double_value>,"maxconnection":<Double_value>,"maxbandwidth":<Double_value>,"connectiondropsrate":<Double_value>,"maxmemory":<Double_value>,"memoryusagepcnt":<Double_value>}]}```
+<b>Response Payload: </b>```{ "nspartition": [ {"partitionname":<String_value>,"tokendropsrate":<Double_value>,"totaltokendrops":<Double_value>,"totaldrops":<Double_value>,"dropsrate":<Double_value>,"totalconnectiondrops":<Double_value>,"currentconnections":<Double_value>,"currentbandwidth":<Double_value>,"maxconnection":<Double_value>,"maxbandwidth":<Double_value>,"connectiondropsrate":<Double_value>,"maxmemory":<Double_value>,"memoryusagepcnt":<Double_value>}]}```
 
 
 

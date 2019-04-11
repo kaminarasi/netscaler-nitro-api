@@ -7,12 +7,12 @@ Binding object showing the appfwpolicy that can be bound to csvserver.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>priority</td><td>&lt;Double></td><td>Read-write</td><td>Priority for the policy.</td></tr><tr><td>bindpoint</td><td>&lt;String></td><td>Read-write</td><td>The bindpoint to which the policy is bound.<br>Possible values = REQUEST, RESPONSE</td></tr><tr><td>policyname</td><td>&lt;String></td><td>Read-write</td><td>Policies bound to this vserver.</td></tr><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name of the label invoked.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the content switching virtual server to which the content switching policy applies.<br>Minimum length = 1</td></tr><tr><td>targetlbvserver</td><td>&lt;String></td><td>Read-write</td><td>Name of the Load Balancing virtual server to which the content is switched, if policy rule is evaluated to be TRUE. Example: bind cs vs cs1 -policyname pol1 -priority 101 -targetLBVserver lb1 Note: Use this parameter only in case of Content Switching policy bind operations to a CS vserver.<br>Minimum length = 1</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>invoke</td><td>&lt;Boolean></td><td>Read-write</td><td>Invoke flag.</td></tr><tr><td>labeltype</td><td>&lt;String></td><td>Read-write</td><td>The invocation type.<br>Possible values = reqvserver, resvserver, policylabel</td></tr><tr><td>sc</td><td>&lt;String></td><td>Read-only</td><td>The state of SureConnect the specified virtual server.<br>Possible values = ON, OFF</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>priority</td><td>&lt;Double></td><td>Read-write</td><td>Priority for the policy.</td></tr><tr><td>bindpoint</td><td>&lt;String></td><td>Read-write</td><td>The bindpoint to which the policy is bound.<br>Possible values = REQUEST, RESPONSE, ICA_REQUEST, OTHERTCP_REQUEST</td></tr><tr><td>policyname</td><td>&lt;String></td><td>Read-write</td><td>Policies bound to this vserver.</td></tr><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name of the label invoked.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the content switching virtual server to which the content switching policy applies.<br>Minimum length = 1</td></tr><tr><td>targetlbvserver</td><td>&lt;String></td><td>Read-write</td><td>Name of the Load Balancing virtual server to which the content is switched, if policy rule is evaluated to be TRUE. Example: bind cs vs cs1 -policyname pol1 -priority 101 -targetLBVserver lb1 Note: Use this parameter only in case of Content Switching policy bind operations to a CS vserver.<br>Minimum length = 1</td></tr><tr><td>gotopriorityexpression</td><td>&lt;String></td><td>Read-write</td><td>Expression specifying the priority of the next policy which will get evaluated if the current policy rule evaluates to TRUE.</td></tr><tr><td>invoke</td><td>&lt;Boolean></td><td>Read-write</td><td>Invoke flag.</td></tr><tr><td>labeltype</td><td>&lt;String></td><td>Read-write</td><td>The invocation type.<br>Possible values = reqvserver, resvserver, policylabel</td></tr><tr><td>sc</td><td>&lt;String></td><td>Read-only</td><td>The state of SureConnect the specified virtual server.<br>Possible values = ON, OFF</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/csvserver_appfwpolicy_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/csvserver_appfwpolicy_binding/name_value&lt;String&gt;?<b>args=policyname:&lt;String_value&gt;,bindpoint:&lt;String_value&gt;,priority:&lt;Double_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

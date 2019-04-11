@@ -12,7 +12,7 @@ Configuration for entity data resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[DELETE](#d)| [GET (ALL)](#get-)
+[DELETE](#d)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

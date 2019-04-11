@@ -12,7 +12,7 @@ Binding object showing the authenticationvserver that can be bound to tmsessionp
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

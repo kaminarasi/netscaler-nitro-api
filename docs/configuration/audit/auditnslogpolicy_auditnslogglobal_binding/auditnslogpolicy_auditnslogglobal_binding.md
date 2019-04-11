@@ -12,7 +12,7 @@ Binding object showing the auditnslogglobal that can be bound to auditnslogpolic
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

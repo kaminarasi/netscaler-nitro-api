@@ -7,7 +7,7 @@ Configuration for 0 resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>warm</td><td>&lt;Boolean></td><td>Read-write</td><td>Restarts the NetScaler software without rebooting the underlying operating system. The session terminates and you must log on to the appliance after it has restarted.<br>Note: This argument is required only for nCore appliances. Classic appliances ignore this argument.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>warm</td><td>&lt;Boolean></td><td>Read-write</td><td>Restarts the Citrix ADC software without rebooting the underlying operating system. The session terminates and you must log on to the appliance after it has restarted.<br>Note: This argument is required only for nCore appliances. Classic appliances ignore this argument.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 

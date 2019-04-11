@@ -12,7 +12,7 @@ Configuration for 0 resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#get-)
+[DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

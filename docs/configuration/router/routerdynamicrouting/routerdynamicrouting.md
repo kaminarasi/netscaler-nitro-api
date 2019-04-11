@@ -12,7 +12,7 @@ Configuration for dynamic routing config resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [APPLY](#)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [APPLY](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

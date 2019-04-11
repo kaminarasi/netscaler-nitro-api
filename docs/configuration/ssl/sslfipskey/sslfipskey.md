@@ -7,12 +7,12 @@ Configuration for FIPS key resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>fipskeyname</td><td>&lt;String></td><td>Read-write</td><td>Name for the FIPS key. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the FIPS key is created.<br><br>The following requirement applies only to the NetScaler CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my fipskey" or 'my fipskey').<br>Minimum length = 1</td></tr><tr><td>modulus</td><td>&lt;Double></td><td>Read-write</td><td>Modulus, in multiples of 64, of the FIPS key to be created.<br>Minimum value = 0<br>Maximum value = 4096</td></tr><tr><td>exponent</td><td>&lt;String></td><td>Read-write</td><td>Exponent value for the FIPS key to be created. Available values function as follows:<br>3=3 (hexadecimal)<br>F4=10001 (hexadecimal).<br>Default value: 3<br>Possible values = 3, F4</td></tr><tr><td>key</td><td>&lt;String></td><td>Read-write</td><td>Name of and, optionally, path to the key file to be imported.<br>/nsconfig/ssl/ is the default path.<br>Minimum length = 1</td></tr><tr><td>inform</td><td>&lt;String></td><td>Read-write</td><td>Input format of the key file. Available formats are:<br>SIM - Secure Information Management; select when importing a FIPS key. If the external FIPS key is encrypted, first decrypt it, and then import it.<br>PEM - Privacy Enhanced Mail; select when importing a non-FIPS key.<br><br>Default value: SIM<br>Possible values = SIM, DER, PEM</td></tr><tr><td>wrapkeyname</td><td>&lt;String></td><td>Read-write</td><td>Name of the wrap key to use for importing the key. Required for importing a non-FIPS key.<br>Minimum length = 1</td></tr><tr><td>iv</td><td>&lt;String></td><td>Read-write</td><td>Initialization Vector (IV) to use for importing the key. Required for importing a non-FIPS key.<br>Minimum length = 1</td></tr><tr><td>size</td><td>&lt;Double></td><td>Read-only</td><td>Size.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>fipskeyname</td><td>&lt;String></td><td>Read-write</td><td>Name for the FIPS key. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the FIPS key is created.<br><br>The following requirement applies only to the Citrix ADC CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my fipskey" or 'my fipskey').<br>Minimum length = 1</td></tr><tr><td>keytype</td><td>&lt;String></td><td>Read-write</td><td>Only RSA key and ECDSA Key are supported.<br>Default value: RSA<br>Possible values = RSA, ECDSA</td></tr><tr><td>exponent</td><td>&lt;String></td><td>Read-write</td><td>Exponent value for the FIPS key to be created. Available values function as follows:<br>3=3 (hexadecimal)<br>F4=10001 (hexadecimal).<br>Default value: 3<br>Possible values = 3, F4</td></tr><tr><td>modulus</td><td>&lt;Double></td><td>Read-write</td><td>Modulus, in multiples of 64, of the FIPS key to be created.<br>Minimum value = 0<br>Maximum value = 4096</td></tr><tr><td>curve</td><td>&lt;String></td><td>Read-write</td><td>Only p_256 (prime256v1) and P_384 (secp384r1) are supported.<br>Default value: P_256<br>Possible values = P_256, P_384</td></tr><tr><td>key</td><td>&lt;String></td><td>Read-write</td><td>Name of and, optionally, path to the key file to be imported.<br>/nsconfig/ssl/ is the default path.<br>Minimum length = 1</td></tr><tr><td>inform</td><td>&lt;String></td><td>Read-write</td><td>Input format of the key file. Available formats are:<br>SIM - Secure Information Management; select when importing a FIPS key. If the external FIPS key is encrypted, first decrypt it, and then import it.<br>PEM - Privacy Enhanced Mail; select when importing a non-FIPS key.<br><br>Default value: SIM<br>Possible values = SIM, DER, PEM</td></tr><tr><td>wrapkeyname</td><td>&lt;String></td><td>Read-write</td><td>Name of the wrap key to use for importing the key. Required for importing a non-FIPS key.<br>Minimum length = 1</td></tr><tr><td>iv</td><td>&lt;String></td><td>Read-write</td><td>Initialization Vector (IV) to use for importing the key. Required for importing a non-FIPS key.<br>Minimum length = 1</td></tr><tr><td>size</td><td>&lt;Double></td><td>Read-only</td><td>Size.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[CREATE](#c)| [DELETE](#d)| [IMPORT](#i)| [EXPORT](#e)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[CREATE](#c)| [DELETE](#d)| [IMPORT](#i)| [EXPORT](#e)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"sslfipskey":{<b>"fipskeyname":<String_value>,</b><b>"modulus":<Double_value>,</b>"exponent":<String_value>}}```
+<b>Request Payload: </b>```{"sslfipskey":{<b>"fipskeyname":<String_value>,</b><b>"keytype":<String_value>,</b>"exponent":<String_value>,"modulus":<Double_value>,"curve":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -119,7 +119,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "sslfipskey": [ {"fipskeyname":<String_value>,"modulus":<Double_value>,"exponent":<String_value>,"size":<Double_value>}]}```
+<b>Response Payload: </b>```{ "sslfipskey": [ {"fipskeyname":<String_value>,"modulus":<Double_value>,"exponent":<String_value>,"curve":<String_value>,"keytype":<String_value>,"size":<Double_value>}]}```
 
 
 
@@ -150,7 +150,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "sslfipskey": [ {"fipskeyname":<String_value>,"modulus":<Double_value>,"exponent":<String_value>,"size":<Double_value>}]}```
+<b>Response Payload: </b>```{ "sslfipskey": [ {"fipskeyname":<String_value>,"modulus":<Double_value>,"exponent":<String_value>,"curve":<String_value>,"keytype":<String_value>,"size":<Double_value>}]}```
 
 
 

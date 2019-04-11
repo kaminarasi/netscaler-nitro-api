@@ -12,7 +12,7 @@ Configuration for "CI" resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [COUNT](#)
+[GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

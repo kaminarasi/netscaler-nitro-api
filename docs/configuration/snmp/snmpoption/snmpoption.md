@@ -7,12 +7,12 @@ Configuration for SNMP option resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>snmpset</td><td>&lt;String></td><td>Read-write</td><td>Accept SNMP SET requests sent to the NetScaler appliance, and allow SNMP managers to write values to MIB objects that are configured for write access.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>snmptraplogging</td><td>&lt;String></td><td>Read-write</td><td>Log any SNMP trap events (for SNMP alarms in which logging is enabled) even if no trap listeners are configured. With the default setting, SNMP trap events are logged if at least one trap listener is configured on the appliance.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>partitionnameintrap</td><td>&lt;String></td><td>Read-write</td><td>Send partition name as a varbind in traps. By default the partition names are not sent as a varbind.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>snmptraplogginglevel</td><td>&lt;String></td><td>Read-write</td><td>Audit log level of SNMP trap logs. The default value is INFORMATIONAL.<br>Default value: INFORMATIONAL<br>Possible values = EMERGENCY, ALERT, CRITICAL, ERROR, WARNING, NOTICE, INFORMATIONAL, DEBUG</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>snmpset</td><td>&lt;String></td><td>Read-write</td><td>Accept SNMP SET requests sent to the Citrix ADC, and allow SNMP managers to write values to MIB objects that are configured for write access.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>snmptraplogging</td><td>&lt;String></td><td>Read-write</td><td>Log any SNMP trap events (for SNMP alarms in which logging is enabled) even if no trap listeners are configured. With the default setting, SNMP trap events are logged if at least one trap listener is configured on the appliance.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>partitionnameintrap</td><td>&lt;String></td><td>Read-write</td><td>Send partition name as a varbind in traps. By default the partition names are not sent as a varbind.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>snmptraplogginglevel</td><td>&lt;String></td><td>Read-write</td><td>Audit log level of SNMP trap logs. The default value is INFORMATIONAL.<br>Default value: INFORMATIONAL<br>Possible values = EMERGENCY, ALERT, CRITICAL, ERROR, WARNING, NOTICE, INFORMATIONAL, DEBUG</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

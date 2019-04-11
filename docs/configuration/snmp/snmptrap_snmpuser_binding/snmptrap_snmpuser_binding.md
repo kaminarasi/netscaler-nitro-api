@@ -7,12 +7,12 @@ Binding object showing the snmpuser that can be bound to snmptrap.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>trapclass</td><td>&lt;String></td><td>Read-write</td><td>Type of trap messages that the NetScaler appliance sends to the trap listener: Generic or the enterprise-specific messages defined in the MIB file.<br>Possible values = generic, specific</td></tr><tr><td>securitylevel</td><td>&lt;String></td><td>Read-write</td><td>Security level of the SNMPv3 trap.<br>Default value: authNoPriv,<br>Possible values = noAuthNoPriv, authNoPriv, authPriv</td></tr><tr><td>username</td><td>&lt;String></td><td>Read-write</td><td>Name of the SNMP user that will send the SNMPv3 traps.</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>Integer value that uniquely identifies the traffic domain in which you want to configure the entity. If you do not specify an ID, the entity becomes part of the default traffic domain, which has an ID of 0.<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>trapdestination</td><td>&lt;String></td><td>Read-write</td><td>IPv4 or the IPv6 address of the trap listener to which the NetScaler appliance is to send SNMP trap messages.<br>Minimum length = 1</td></tr><tr><td>version</td><td>&lt;String></td><td>Read-write</td><td>SNMP version, which determines the format of trap messages sent to the trap listener. This setting must match the setting on the trap listener. Otherwise, the listener drops the trap messages.<br>Default value: V3<br>Possible values = V1, V2, V3</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>trapclass</td><td>&lt;String></td><td>Read-write</td><td>Type of trap messages that the Citrix ADC sends to the trap listener: Generic or the enterprise-specific messages defined in the MIB file.<br>Possible values = generic, specific</td></tr><tr><td>securitylevel</td><td>&lt;String></td><td>Read-write</td><td>Security level of the SNMPv3 trap.<br>Default value: authNoPriv,<br>Possible values = noAuthNoPriv, authNoPriv, authPriv</td></tr><tr><td>username</td><td>&lt;String></td><td>Read-write</td><td>Name of the SNMP user that will send the SNMPv3 traps.</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>Integer value that uniquely identifies the traffic domain in which you want to configure the entity. If you do not specify an ID, the entity becomes part of the default traffic domain, which has an ID of 0.<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>trapdestination</td><td>&lt;String></td><td>Read-write</td><td>IPv4 or the IPv6 address of the trap listener to which the Citrix ADC is to send SNMP trap messages.<br>Minimum length = 1</td></tr><tr><td>version</td><td>&lt;String></td><td>Read-write</td><td>SNMP version, which determines the format of trap messages sent to the trap listener. This setting must match the setting on the trap listener. Otherwise, the listener drops the trap messages.<br>Default value: V3<br>Possible values = V1, V2, V3</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/snmptrap_snmpuser_binding/trapclass_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/snmptrap_snmpuser_binding/trapclass_value&lt;String&gt;?<b>args=<b>trapdestination:&lt;String_value&gt;,</b>td:&lt;Double_value&gt;,version:&lt;String_value&gt;,<b>username:&lt;String_value&gt;</b></b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

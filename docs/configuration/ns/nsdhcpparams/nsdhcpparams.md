@@ -7,12 +7,12 @@ Configuration for DHCP parameters resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>dhcpclient</td><td>&lt;String></td><td>Read-write</td><td>Enables DHCP client to acquire IP address from the DHCP server in the next boot. When set to OFF, disables the DHCP client in the next boot.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>saveroute</td><td>&lt;String></td><td>Read-write</td><td>DHCP acquired routes are saved on the NetScaler appliance.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>ipaddress</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired IP.</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired Netmask.</td></tr><tr><td>hostrtgw</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired Gateway.</td></tr><tr><td>running</td><td>&lt;Boolean></td><td>Read-only</td><td>DHCP mode.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>dhcpclient</td><td>&lt;String></td><td>Read-write</td><td>Enables DHCP client to acquire IP address from the DHCP server in the next boot. When set to OFF, disables the DHCP client in the next boot.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>saveroute</td><td>&lt;String></td><td>Read-write</td><td>DHCP acquired routes are saved on the Citrix ADC.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>ipaddress</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired IP.</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired Netmask.</td></tr><tr><td>hostrtgw</td><td>&lt;String></td><td>Read-only</td><td>DHCP acquired Gateway.</td></tr><tr><td>running</td><td>&lt;Boolean></td><td>Read-only</td><td>DHCP mode.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

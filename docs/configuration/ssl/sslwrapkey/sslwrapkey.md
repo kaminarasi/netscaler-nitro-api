@@ -7,12 +7,12 @@ Configuration for WRAP key resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>wrapkeyname</td><td>&lt;String></td><td>Read-write</td><td>Name for the wrap key. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the wrap key is created.<br>The following requirement applies only to the NetScaler CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my key" or 'my key').<br>Minimum length = 1</td></tr><tr><td>password</td><td>&lt;String></td><td>Read-write</td><td>Password string for the wrap key.<br>Minimum length = 1</td></tr><tr><td>salt</td><td>&lt;String></td><td>Read-write</td><td>Salt string for the wrap key.<br>Minimum length = 1</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>wrapkeyname</td><td>&lt;String></td><td>Read-write</td><td>Name for the wrap key. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the wrap key is created.<br>The following requirement applies only to the Citrix ADC CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my key" or 'my key').<br>Minimum length = 1</td></tr><tr><td>password</td><td>&lt;String></td><td>Read-write</td><td>Password string for the wrap key.<br>Minimum length = 1</td></tr><tr><td>salt</td><td>&lt;String></td><td>Read-write</td><td>Salt string for the wrap key.<br>Minimum length = 1</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[CREATE](#c)| [DELETE](#d)| [GET (ALL)](#get-)| [COUNT](#)
+[CREATE](#c)| [DELETE](#d)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

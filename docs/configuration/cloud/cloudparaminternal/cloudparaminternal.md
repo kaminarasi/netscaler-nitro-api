@@ -12,7 +12,7 @@ Configuration for cloud paramInternal resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [GET (ALL)](#get-)| [COUNT](#)
+[UPDATE](#u)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

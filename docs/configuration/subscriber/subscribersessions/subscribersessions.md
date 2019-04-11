@@ -7,12 +7,12 @@ Configuration for subscriber sesions resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>ip</td><td>&lt;String></td><td>Read-write</td><td>Subscriber IP Address.</td></tr><tr><td>nodeid</td><td>&lt;Double></td><td>Read-write</td><td>Unique number that identifies the cluster node.<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>subscriptionidtype</td><td>&lt;String></td><td>Read-only</td><td>Subscription-Id type.<br>Possible values = E164, IMSI, SIP_URI, NAI, PRIVATE</td></tr><tr><td>subscriptionidvalue</td><td>&lt;String></td><td>Read-only</td><td>Subscription-Id value.</td></tr><tr><td>subscriberrules</td><td>&lt;String[]></td><td>Read-only</td><td>Rules stored in this session for this subscriber. When PCRF sends Charging-Rule-Name or Charging-Rule-Base-Name AVP for a subscriber, Netscaler stores these AVPs in the subscriber session. These Rules can be retreived using 'Subscriber.Rule_Active(&lt;rule name&gt;)' expression. For static subscriber profiles, these rules are configured using '-subscriberRules &lt;list of rules&gt;'.</td></tr><tr><td>flags</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session flags.</td></tr><tr><td>ttl</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session revalidation Timeout remaining. This TTL gets refreshed when a radius or CCA or RAR message is received for this subscriber session.<br>Netscaler will send a CCR-U after revalidation timer expires.<br>If subscriber sessions is a negative session, then Netscaler will send a CCR-I after TTL expires. Negative Sessions are sessions which have not been resolved by PCRF and instead of polling PCRF continously, Netscaler has installed a negative session. If default subscriber is configued, then Negative Sessions inherits default subscriber profile. .</td></tr><tr><td>idlettl</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session Activity Timeout remaining. Netscaler will take an idleAction after ttl expires. idleaction could be --&gt;<br>1. ccrTerminate: (default) send CCR-T to inform PCRF about session termination and delete the session. <br>2. delete: Just delete the subscriber session without informing PCRF.<br>3. ccrUpdate: Do not delete the session and instead send a CCR-U to PCRF requesting for an updated session.<br>But if this is a negative session and idleaction is ccrUpdate then NS won't take any action. Also on negative sessions ccrTerminate translates to delete.</td></tr><tr><td>avpdisplaybuffer</td><td>&lt;String></td><td>Read-only</td><td>Subscriber Attributes Display.</td></tr><tr><td>servicepath</td><td>&lt;String></td><td>Read-only</td><td>Name of the servicepath to be taken for this subscriber.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>ip</td><td>&lt;String></td><td>Read-write</td><td>Subscriber IP Address.</td></tr><tr><td>vlan</td><td>&lt;Double></td><td>Read-write</td><td>The vlan number on which the subscriber is located.<br>Minimum value = 0<br>Maximum value = 4096</td></tr><tr><td>nodeid</td><td>&lt;Double></td><td>Read-write</td><td>Unique number that identifies the cluster node.<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>subscriptionidtype</td><td>&lt;String></td><td>Read-only</td><td>Subscription-Id type.<br>Possible values = E164, IMSI, SIP_URI, NAI, PRIVATE</td></tr><tr><td>subscriptionidvalue</td><td>&lt;String></td><td>Read-only</td><td>Subscription-Id value.</td></tr><tr><td>subscriberrules</td><td>&lt;String[]></td><td>Read-only</td><td>Rules stored in this session for this subscriber. When PCRF sends Charging-Rule-Name or Charging-Rule-Base-Name AVP for a subscriber, Citrix ADC stores these AVPs in the subscriber session. These Rules can be retreived using 'Subscriber.Rule_Active(&lt;rule name&gt;)' expression. For static subscriber profiles, these rules are configured using '-subscriberRules &lt;list of rules&gt;'.</td></tr><tr><td>flags</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session flags.</td></tr><tr><td>ttl</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session revalidation Timeout remaining. This TTL gets refreshed when a radius or CCA or RAR message is received for this subscriber session.<br>Citrix ADC will send a CCR-U after revalidation timer expires.<br>If subscriber sessions is a negative session, then Citrix ADC will send a CCR-I after TTL expires. Negative Sessions are sessions which have not been resolved by PCRF and instead of polling PCRF continously, Citrix ADC has installed a negative session. If default subscriber is configued, then Negative Sessions inherits default subscriber profile. .</td></tr><tr><td>idlettl</td><td>&lt;Double></td><td>Read-only</td><td>Subscriber Session Activity Timeout remaining. Citrix ADC will take an idleAction after ttl expires. idleaction could be --&gt;<br>1. ccrTerminate: (default) send CCR-T to inform PCRF about session termination and delete the session. <br>2. delete: Just delete the subscriber session without informing PCRF.<br>3. ccrUpdate: Do not delete the session and instead send a CCR-U to PCRF requesting for an updated session.<br>But if this is a negative session and idleaction is ccrUpdate then Citrix ADC won't take any action. Also on negative sessions ccrTerminate translates to delete.</td></tr><tr><td>avpdisplaybuffer</td><td>&lt;String></td><td>Read-only</td><td>Subscriber Attributes Display.</td></tr><tr><td>servicepath</td><td>&lt;String></td><td>Read-only</td><td>Name of the servicepath to be taken for this subscriber.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[CLEAR](#)| [GET (ALL)](#get-)| [COUNT](#)
+[CLEAR](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"subscribersessions":{"ip":<String_value>}}```
+<b>Request Payload: </b>```{"subscribersessions":{"ip":<String_value>,"vlan":<Double_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -45,7 +45,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/subscribersessions
 <b>Query-parameters:</b>
 <b>args</b>
-http://&lt;netscaler-ip-address&gt;/nitro/v1/config/subscribersessions?<b>args=ip:&lt;String_value&gt;,nodeid:&lt;Double_value&gt;</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/subscribersessions?<b>args=ip:&lt;String_value&gt;,vlan:&lt;Double_value&gt;,nodeid:&lt;Double_value&gt;</b>
 Use this query-parameter to get subscribersessions resources based on additional properties.
 
 
@@ -80,7 +80,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "subscribersessions": [ {ip:<String_value>,nodeid:<Double_value>"subscriptionidtype":<String_value>,"subscriptionidvalue":<String_value>,"subscriberrules":<String[]_value>,"flags":<Double_value>,"ttl":<Double_value>,"idlettl":<Double_value>,"avpdisplaybuffer":<String_value>,"servicepath":<String_value>}]}```
+<b>Response Payload: </b>```{ "subscribersessions": [ {ip:<String_value>,vlan:<Double_value>,nodeid:<Double_value>"subscriptionidtype":<String_value>,"subscriptionidvalue":<String_value>,"subscriberrules":<String[]_value>,"flags":<Double_value>,"ttl":<Double_value>,"idlettl":<Double_value>,"avpdisplaybuffer":<String_value>,"servicepath":<String_value>}]}```
 
 
 

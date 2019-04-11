@@ -7,12 +7,12 @@ Binding object showing the natrule that can be bound to netprofile.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>rewriteip</td><td>&lt;String></td><td>Read-write</td><td>.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the netprofile to which to bind port ranges.<br>Minimum length = 1</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>.</td></tr><tr><td>natrule</td><td>&lt;String></td><td>Read-write</td><td>IPv4 network address on whose traffic you want the NetScaler appliance to do rewrite ip prefix.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>rewriteip</td><td>&lt;String></td><td>Read-write</td><td>.</td></tr><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the netprofile to which to bind port ranges.<br>Minimum length = 1</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>.</td></tr><tr><td>natrule</td><td>&lt;String></td><td>Read-write</td><td>IPv4 network address on whose traffic you want the Citrix ADC to do rewrite ip prefix.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/netprofile_natrule_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/netprofile_natrule_binding/name_value&lt;String&gt;?<b>args=natrule:&lt;String_value&gt;,netmask:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

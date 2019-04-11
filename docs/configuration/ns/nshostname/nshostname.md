@@ -7,12 +7,12 @@ Configuration for host name resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hostname</td><td>&lt;String></td><td>Read-write</td><td>Host name for the NetScaler appliance.<br>Minimum length = 1<br>Maximum length = 255</td></tr><tr><td>ownernode</td><td>&lt;Double></td><td>Read-write</td><td>ID of the cluster node for which you are setting the hostname. Can be configured only through the cluster IP address.<br>Default value: 255<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>hostname</td><td>&lt;String></td><td>Read-write</td><td>Host name for the Citrix ADC.<br>Minimum length = 1<br>Maximum length = 255</td></tr><tr><td>ownernode</td><td>&lt;Double></td><td>Read-write</td><td>ID of the cluster node for which you are setting the hostname. Can be configured only through the cluster IP address.<br>Default value: 255<br>Minimum value = 0<br>Maximum value = 31</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [GET (ALL)](#get-)| [COUNT](#)
+[UPDATE](#u)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

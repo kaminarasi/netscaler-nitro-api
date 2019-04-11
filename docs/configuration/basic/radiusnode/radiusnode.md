@@ -7,12 +7,12 @@ Configuration for RADIUS Node resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>nodeprefix</td><td>&lt;String></td><td>Read-write</td><td>IP address/IP prefix of radius node in CIDR format.</td></tr><tr><td>radkey</td><td>&lt;String></td><td>Read-write</td><td>The key shared between the RADIUS server and clients.<br>Required for NetScaler appliance to communicate with the RADIUS nodes.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>nodeprefix</td><td>&lt;String></td><td>Read-write</td><td>IP address/IP prefix of radius node in CIDR format.</td></tr><tr><td>radkey</td><td>&lt;String></td><td>Read-write</td><td>The key shared between the RADIUS server and clients.<br>Required for Citrix ADC to communicate with the RADIUS nodes.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [UPDATE](#u)| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [UPDATE](#u)| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

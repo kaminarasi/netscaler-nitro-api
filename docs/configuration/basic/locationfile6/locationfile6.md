@@ -7,12 +7,12 @@ Configuration for location file6 resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>Locationfile</td><td>&lt;String></td><td>Read-write</td><td>Name of the IPv6 location file, with or without absolute path. If the path is not included, the default path (/var/netscaler/locdb) is assumed. In a high availability setup, the static database must be stored in the same location on both NetScaler appliances.<br>Minimum length = 1</td></tr><tr><td>format</td><td>&lt;String></td><td>Read-write</td><td>Format of the IPv6 location file. Required for the NetScaler appliance to identify how to read the location file.<br>Default value: netscaler6<br>Possible values = netscaler6, geoip-country6</td></tr><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>URL \(protocol, host, path, and file name\) from where the location file will be imported.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>Locationfile</td><td>&lt;String></td><td>Read-write</td><td>Name of the IPv6 location file, with or without absolute path. If the path is not included, the default path (/var/netscaler/locdb) is assumed. In a high availability setup, the static database must be stored in the same location on both Citrix ADCs.<br>Minimum length = 1</td></tr><tr><td>format</td><td>&lt;String></td><td>Read-write</td><td>Format of the IPv6 location file. Required for the Citrix ADC to identify how to read the location file.<br>Default value: netscaler6<br>Possible values = netscaler6, geoip-country6</td></tr><tr><td>src</td><td>&lt;String></td><td>Read-write</td><td>URL \(protocol, host, path, and file name\) from where the location file will be imported.<br>NOTE: The import fails if the object to be imported is on an HTTPS server that requires client certificate authentication for access.<br>Minimum length = 1<br>Maximum length = 2047</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#get-)| [COUNT](#)
+[ADD]()| [DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

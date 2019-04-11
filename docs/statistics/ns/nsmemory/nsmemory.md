@@ -7,12 +7,12 @@ Statistics for resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>pool</td><td>&lt;String></td><td>Read-write</td><td>Feature name for which to display memory statistics.<br>Minimum length = 1</td></tr><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>allocf</td><td>&lt;Double></td><td>Read-only</td><td>Memory allocation failure for particular feature.</td></tr><tr><td>memcurallocper</td><td>&lt;Double></td><td>Read-only</td><td>Percentage of NetScaler memory used by the feature.</td></tr><tr><td>memcurinkb</td><td>&lt;Double></td><td>Read-only</td><td>Total current NetScaler memory available for use by the feature, in kilobytes.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>pool</td><td>&lt;String></td><td>Read-write</td><td>Feature name for which to display memory statistics.<br>Minimum length = 1</td></tr><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>allocf</td><td>&lt;Double></td><td>Read-only</td><td>Memory allocation failure for particular feature.</td></tr><tr><td>memcurallocper</td><td>&lt;Double></td><td>Read-only</td><td>Percentage of Citrix ADC memory used by the feature.</td></tr><tr><td>memcurinkb</td><td>&lt;Double></td><td>Read-only</td><td>Total current Citrix ADC memory available for use by the feature, in kilobytes.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)| [GET]()
+[GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:

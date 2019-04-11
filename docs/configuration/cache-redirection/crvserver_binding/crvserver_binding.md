@@ -12,7 +12,7 @@ Binding object which returns the resources bound to crvserver.
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)
+[GET]()| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

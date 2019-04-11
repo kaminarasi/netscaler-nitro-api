@@ -7,12 +7,12 @@ Binding object showing the intranetip that can be bound to vpnvserver.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the virtual server.<br>Minimum length = 1</td></tr><tr><td>intranetip</td><td>&lt;String></td><td>Read-write</td><td>The network ID for the range of intranet IP addresses or individual intranet IP addresses to be bound to the virtual server.</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>The netmask of the intranet IP address or range.</td></tr><tr><td>map</td><td>&lt;String></td><td>Read-only</td><td>Whether or not mapped IP addresses are ON or OFF. Mapped IP addresses are source IP addresses for the virtual servers running on the NetScaler. Mapped IP addresses are used by the system to connect to the backend servers.<br>Possible values = ON, OFF</td></tr><tr><td>acttype</td><td>&lt;Double></td><td>Read-only</td><td>.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name of the virtual server.<br>Minimum length = 1</td></tr><tr><td>intranetip</td><td>&lt;String></td><td>Read-write</td><td>The network ID for the range of intranet IP addresses or individual intranet IP addresses to be bound to the virtual server.</td></tr><tr><td>netmask</td><td>&lt;String></td><td>Read-write</td><td>The netmask of the intranet IP address or range.</td></tr><tr><td>map</td><td>&lt;String></td><td>Read-only</td><td>Whether or not mapped IP addresses are ON or OFF. Mapped IP addresses are source IP addresses for the virtual servers running on the Citrix ADC. Mapped IP addresses are used by the system to connect to the backend servers.<br>Possible values = ON, OFF</td></tr><tr><td>acttype</td><td>&lt;Double></td><td>Read-only</td><td>.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/vpnvserver_intranetip_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/vpnvserver_intranetip_binding/name_value&lt;String&gt;?<b>args=intranetip:&lt;String_value&gt;,netmask:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

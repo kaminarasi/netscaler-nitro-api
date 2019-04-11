@@ -7,12 +7,12 @@ Configuration for Autoscale policy resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>rule</td><td>&lt;String></td><td>Read-write</td><td>The rule associated with the policy.</td></tr><tr><td>action</td><td>&lt;String></td><td>Read-write</td><td>The autoscale profile associated with the policy.<br>Minimum length = 1</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Comments associated with this autoscale policy.</td></tr><tr><td>logaction</td><td>&lt;String></td><td>Read-write</td><td>The log action associated with the autoscale policy.</td></tr><tr><td>newname</td><td>&lt;String></td><td>Read-write</td><td>The new name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>hits</td><td>&lt;Double></td><td>Read-only</td><td>Number of hits.</td></tr><tr><td>undefhits</td><td>&lt;Double></td><td>Read-only</td><td>Number of Undef hits.</td></tr><tr><td>priority</td><td>&lt;Double></td><td>Read-only</td><td>Specifies the priority of the policy.</td></tr><tr><td>activepolicy</td><td>&lt;Integer></td><td>Read-only</td><td>Indicates whether policy is bound or not.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>The name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>rule</td><td>&lt;String></td><td>Read-write</td><td>The rule associated with the policy.</td></tr><tr><td>action</td><td>&lt;String></td><td>Read-write</td><td>The autoscale profile associated with the policy.<br>Minimum length = 1</td></tr><tr><td>comment</td><td>&lt;String></td><td>Read-write</td><td>Comments associated with this autoscale policy.</td></tr><tr><td>logaction</td><td>&lt;String></td><td>Read-write</td><td>The log action associated with the autoscale policy.</td></tr><tr><td>newname</td><td>&lt;String></td><td>Read-write</td><td>The new name of the autoscale policy.<br>Minimum length = 1</td></tr><tr><td>hits</td><td>&lt;Double></td><td>Read-only</td><td>Number of hits.</td></tr><tr><td>undefhits</td><td>&lt;Double></td><td>Read-only</td><td>Number of Undef hits.</td></tr><tr><td>priority</td><td>&lt;Double></td><td>Read-only</td><td>Specifies the priority of the policy.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [RENAME](#r)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [RENAME](#r)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -134,7 +134,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "autoscalepolicy": [ {"name":<String_value>,"rule":<String_value>,"action":<String_value>,"comment":<String_value>,"logaction":<String_value>,"hits":<Double_value>,"undefhits":<Double_value>,"priority":<Double_value>,"activepolicy":<Integer_value>}]}```
+<b>Response Payload: </b>```{ "autoscalepolicy": [ {"name":<String_value>,"rule":<String_value>,"action":<String_value>,"comment":<String_value>,"logaction":<String_value>,"hits":<Double_value>,"undefhits":<Double_value>,"priority":<Double_value>}]}```
 
 
 
@@ -165,7 +165,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "autoscalepolicy": [ {"name":<String_value>,"rule":<String_value>,"action":<String_value>,"comment":<String_value>,"logaction":<String_value>,"hits":<Double_value>,"undefhits":<Double_value>,"priority":<Double_value>,"activepolicy":<Integer_value>}]}```
+<b>Response Payload: </b>```{ "autoscalepolicy": [ {"name":<String_value>,"rule":<String_value>,"action":<String_value>,"comment":<String_value>,"logaction":<String_value>,"hits":<Double_value>,"undefhits":<Double_value>,"priority":<Double_value>}]}```
 
 
 

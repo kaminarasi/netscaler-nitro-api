@@ -7,12 +7,12 @@ Configuration for Network profile resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the net profile. Must begin with a letter, number, or the underscore character (_), and can consist of letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at sign (@), equals (=), colon (:), and underscore characters. Cannot be changed after the profile is created. Choose a name that helps identify the net profile.<br>Minimum length = 1</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>Integer value that uniquely identifies the traffic domain in which you want to configure the entity. If you do not specify an ID, the entity becomes part of the default traffic domain, which has an ID of 0.<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>srcip</td><td>&lt;String></td><td>Read-write</td><td>IP address or the name of an IP set.</td></tr><tr><td>srcippersistency</td><td>&lt;String></td><td>Read-write</td><td>When the net profile is associated with a virtual server or its bound services, this option enables the NetScaler appliance to use the same address, specified in the net profile, to communicate to servers for all sessions initiated from a particular client to the virtual server.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>overridelsn</td><td>&lt;String></td><td>Read-write</td><td>USNIP/USIP settings override LSN settings for configured<br>service/virtual server traffic.. .<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the net profile. Must begin with a letter, number, or the underscore character (_), and can consist of letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at sign (@), equals (=), colon (:), and underscore characters. Cannot be changed after the profile is created. Choose a name that helps identify the net profile.<br>Minimum length = 1</td></tr><tr><td>td</td><td>&lt;Double></td><td>Read-write</td><td>Integer value that uniquely identifies the traffic domain in which you want to configure the entity. If you do not specify an ID, the entity becomes part of the default traffic domain, which has an ID of 0.<br>Minimum value = 0<br>Maximum value = 4094</td></tr><tr><td>srcip</td><td>&lt;String></td><td>Read-write</td><td>IP address or the name of an IP set.</td></tr><tr><td>srcippersistency</td><td>&lt;String></td><td>Read-write</td><td>When the net profile is associated with a virtual server or its bound services, this option enables the Citrix ADC to use the same address, specified in the net profile, to communicate to servers for all sessions initiated from a particular client to the virtual server.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>overridelsn</td><td>&lt;String></td><td>Read-write</td><td>USNIP/USIP settings override LSN settings for configured<br>service/virtual server traffic.. .<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>mbf</td><td>&lt;String></td><td>Read-write</td><td>Response will be sent using learnt info if enabled. When creating a netprofile, if you do not set this parameter, the netprofile inherits the global MBF setting (available in the enable ns mode and disable ns mode CLI commands, or in the System &gt; Settings &gt; Configure modes &gt; Configure Modes dialog box). However, you can override this setting after you create the netprofile.<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"td":<Double_value>,"srcip":<String_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>}}```
+<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"td":<Double_value>,"srcip":<String_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>,"mbf":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -62,7 +62,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"srcip":<String_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>}}```
+<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"srcip":<String_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>,"mbf":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -77,7 +77,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"srcip":true,"srcippersistency":true,"overridelsn":true}}```
+<b>Request Payload: </b>```{"netprofile":{<b>"name":<String_value>,</b>"srcip":true,"srcippersistency":true,"overridelsn":true,"mbf":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -119,7 +119,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "netprofile": [ {"name":<String_value>,"srcip":<String_value>,"td":<Double_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>}]}```
+<b>Response Payload: </b>```{ "netprofile": [ {"name":<String_value>,"srcip":<String_value>,"td":<Double_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>,"mbf":<String_value>}]}```
 
 
 
@@ -150,7 +150,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "netprofile": [ {"name":<String_value>,"srcip":<String_value>,"td":<Double_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>}]}```
+<b>Response Payload: </b>```{ "netprofile": [ {"name":<String_value>,"srcip":<String_value>,"td":<Double_value>,"srcippersistency":<String_value>,"overridelsn":<String_value>,"mbf":<String_value>}]}```
 
 
 

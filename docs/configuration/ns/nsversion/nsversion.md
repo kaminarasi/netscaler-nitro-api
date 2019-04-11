@@ -7,12 +7,12 @@ Configuration for version resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>version</td><td>&lt;String></td><td>Read-only</td><td>Version.</td></tr><tr><td>mode</td><td>&lt;Double></td><td>Read-only</td><td>Kernel mode (KMPE/VMPE).</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>installedversion</td><td>&lt;Boolean></td><td>Read-write</td><td>Installed version.</td></tr><tr><td>version</td><td>&lt;String></td><td>Read-only</td><td>Version.</td></tr><tr><td>mode</td><td>&lt;Double></td><td>Read-only</td><td>Kernel mode (KMPE/VMPE).</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)
+[GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -28,6 +28,13 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/nsversion
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/nsversion?<b>args=installedversion:&lt;Boolean_value&gt;</b>
+Use this query-parameter to get nsversion resources based on additional properties.
+
+
+
 <b>HTTP Method:</b>GET
 <b>Request Headers:</b>
 
@@ -38,7 +45,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "nsversion": [ {"version":<String_value>,"mode":<Double_value>}]}```
+<b>Response Payload: </b>```{ "nsversion": [ {installedversion:<Boolean_value>"version":<String_value>,"mode":<Double_value>}]}```
 
 
 

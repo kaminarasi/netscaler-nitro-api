@@ -7,12 +7,12 @@ Binding object showing the sslciphersuite that can be bound to sslcipher.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>ciphername</td><td>&lt;String></td><td>Read-write</td><td>Cipher name.</td></tr><tr><td>ciphgrpals</td><td>&lt;String></td><td>Read-write</td><td>A cipher-suite can consist of an individual cipher name, the system predefined cipher-alias name, or user defined cipher-group name.<br>Minimum length = 1</td></tr><tr><td>cipherpriority</td><td>&lt;Double></td><td>Read-write</td><td>This indicates priority assigned to the particular cipher.<br>Minimum value = 1</td></tr><tr><td>description</td><td>&lt;String></td><td>Read-write</td><td>Cipher suite description.</td></tr><tr><td>ciphergroupname</td><td>&lt;String></td><td>Read-write</td><td>Name for the user-defined cipher group. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the cipher group is created. The following requirement applies only to the NetScaler CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my ciphergroup" or 'my ciphergroup').<br>Minimum length = 1</td></tr><tr><td>cipheroperation</td><td>&lt;String></td><td>Read-write</td><td>The operation that is performed when adding the cipher-suite. Possible cipher operations are: ADD - Appends the given cipher-suite to the existing one configured for the virtual server. REM - Removes the given cipher-suite from the existing one configured for the virtual server. ORD - Overrides the current configured cipher-suite for the virtual server with the given cipher-suite.<br>Default value: 0<br>Possible values = ADD, REM, ORD</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>ciphername</td><td>&lt;String></td><td>Read-write</td><td>Cipher name.</td></tr><tr><td>ciphgrpals</td><td>&lt;String></td><td>Read-write</td><td>A cipher-suite can consist of an individual cipher name, the system predefined cipher-alias name, or user defined cipher-group name.<br>Minimum length = 1</td></tr><tr><td>cipherpriority</td><td>&lt;Double></td><td>Read-write</td><td>This indicates priority assigned to the particular cipher.<br>Minimum value = 1</td></tr><tr><td>description</td><td>&lt;String></td><td>Read-write</td><td>Cipher suite description.</td></tr><tr><td>ciphergroupname</td><td>&lt;String></td><td>Read-write</td><td>Name for the user-defined cipher group. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after the cipher group is created. The following requirement applies only to the Citrix ADC CLI: If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my ciphergroup" or 'my ciphergroup').<br>Minimum length = 1</td></tr><tr><td>cipheroperation</td><td>&lt;String></td><td>Read-write</td><td>The operation that is performed when adding the cipher-suite. Possible cipher operations are: ADD - Appends the given cipher-suite to the existing one configured for the virtual server. REM - Removes the given cipher-suite from the existing one configured for the virtual server. ORD - Overrides the current configured cipher-suite for the virtual server with the given cipher-suite.<br>Default value: 0<br>Possible values = ADD, REM, ORD</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-write</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/sslcipher_sslciphersuite_binding
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/sslcipher_sslciphersuite_binding?<b>args=<b>ciphergroupname:&lt;String_value&gt;,</b>ciphername:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

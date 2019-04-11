@@ -7,12 +7,12 @@ Configuration for RNAT parameter resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>tcpproxy</td><td>&lt;String></td><td>Read-write</td><td>Enable TCP proxy, which enables the NetScaler appliance to optimize the RNAT TCP traffic by using Layer 4 features.<br>Default value: ENABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>srcippersistency</td><td>&lt;String></td><td>Read-write</td><td>Enable source ip persistency, which enables the NetScaler appliance to use the RNAT ips using source ip.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>tcpproxy</td><td>&lt;String></td><td>Read-write</td><td>Enable TCP proxy, which enables the Citrix ADC to optimize the RNAT TCP traffic by using Layer 4 features.<br>Default value: ENABLED<br>Possible values = ENABLED, DISABLED</td></tr><tr><td>srcippersistency</td><td>&lt;String></td><td>Read-write</td><td>Enable source ip persistency, which enables the Citrix ADC to use the RNAT ips using source ip.<br>Default value: DISABLED<br>Possible values = ENABLED, DISABLED</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

@@ -12,7 +12,7 @@ Configuration for XML schema resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#get-)| [GET]()
+[DELETE](#d)| [IMPORT](#i)| [GET (ALL)](#ge)| [GET]()
 
 
 Some options that you can use for each operations:

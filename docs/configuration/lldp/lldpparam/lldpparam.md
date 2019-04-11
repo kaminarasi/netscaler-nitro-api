@@ -7,12 +7,12 @@ Configuration for lldp params resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>holdtimetxmult</td><td>&lt;Double></td><td>Read-write</td><td>A multiplier for calculating the duration for which the receiving device stores the LLDP information in its database before discarding or removing it. The duration is calculated as the holdtimeTxMult (Holdtime Multiplier) parameter value multiplied by the timer (Timer) parameter value.<br>Default value: 4<br>Minimum value = 1<br>Maximum value = 20</td></tr><tr><td>timer</td><td>&lt;Double></td><td>Read-write</td><td>Interval, in seconds, between LLDP packet data units (LLDPDUs). that the NetScaler ADC sends to a directly connected device.<br>Default value: 30<br>Minimum value = 1<br>Maximum value = 3000</td></tr><tr><td>mode</td><td>&lt;String></td><td>Read-write</td><td>Global mode of Link Layer Discovery Protocol (LLDP) on the NetScaler ADC. The resultant LLDP mode of an interface depends on the LLDP mode configured at the global and the interface levels.<br>Possible values = NONE, TRANSMITTER, RECEIVER, TRANSCEIVER</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>holdtimetxmult</td><td>&lt;Double></td><td>Read-write</td><td>A multiplier for calculating the duration for which the receiving device stores the LLDP information in its database before discarding or removing it. The duration is calculated as the holdtimeTxMult (Holdtime Multiplier) parameter value multiplied by the timer (Timer) parameter value.<br>Default value: 4<br>Minimum value = 1<br>Maximum value = 20</td></tr><tr><td>timer</td><td>&lt;Double></td><td>Read-write</td><td>Interval, in seconds, between LLDP packet data units (LLDPDUs). that the Citrix ADC sends to a directly connected device.<br>Default value: 30<br>Minimum value = 1<br>Maximum value = 3000</td></tr><tr><td>mode</td><td>&lt;String></td><td>Read-write</td><td>Global mode of Link Layer Discovery Protocol (LLDP) on the Citrix ADC. The resultant LLDP mode of an interface depends on the LLDP mode configured at the global and the interface levels.<br>Possible values = NONE, TRANSMITTER, RECEIVER, TRANSCEIVER</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

@@ -7,12 +7,12 @@ Statistics for dos.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>dostotconditiontriggered</td><td>&lt;Double></td><td>Read-only</td><td>Number of times the NetScaler appliance triggered the DOS JavaScript due to a condition match.</td></tr><tr><td>dosconditiontriggeredrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotconditiontriggered</td></tr><tr><td>dostotvalidcookies</td><td>&lt;Double></td><td>Read-only</td><td>Number of clients from whom the NetScaler appliance received a valid DOS cookie.</td></tr><tr><td>dosvalidcookiesrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotvalidcookies</td></tr><tr><td>dostotdospriorityclients</td><td>&lt;Double></td><td>Read-only</td><td>Number of valid clients that were given DOS priority.</td></tr><tr><td>dosdospriorityclientsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotdospriorityclients</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>clearstats</td><td>&lt;String></td><td>Read-write</td><td>Clear the statsistics / counters.<br>Possible values = basic, full</td></tr><tr><td>dostotconditiontriggered</td><td>&lt;Double></td><td>Read-only</td><td>Number of times the Citrix ADC triggered the DOS JavaScript due to a condition match.</td></tr><tr><td>dosconditiontriggeredrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotconditiontriggered</td></tr><tr><td>dostotvalidcookies</td><td>&lt;Double></td><td>Read-only</td><td>Number of clients from whom the Citrix ADC received a valid DOS cookie.</td></tr><tr><td>dosvalidcookiesrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotvalidcookies</td></tr><tr><td>dostotdospriorityclients</td><td>&lt;Double></td><td>Read-only</td><td>Number of valid clients that were given DOS priority.</td></tr><tr><td>dosdospriorityclientsrate</td><td>&lt;Double></td><td>Read-only</td><td>Rate (/s) counter for dostotdospriorityclients</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)
+[GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

@@ -7,12 +7,12 @@ Configuration for OAuth Identity Provider (IdP) profile resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the new OAuth Identity Provider (IdP) single sign-on profile. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after an action is created.<br><br>The following requirement applies only to the NetScaler CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my action" or 'my action').<br>Minimum length = 1</td></tr><tr><td>clientid</td><td>&lt;String></td><td>Read-write</td><td>Unique identity of the relying party requesting for authentication.<br>Minimum length = 1</td></tr><tr><td>clientsecret</td><td>&lt;String></td><td>Read-write</td><td>Unique secret string to authorize relying party at authorization server.<br>Minimum length = 1</td></tr><tr><td>redirecturl</td><td>&lt;String></td><td>Read-write</td><td>URL endpoint on relying party to which the OAuth token is to be sent.<br>Minimum length = 1</td></tr><tr><td>issuer</td><td>&lt;String></td><td>Read-write</td><td>The name to be used in requests sent from Netscaler to IdP to uniquely identify Netscaler.<br>Minimum length = 1</td></tr><tr><td>audience</td><td>&lt;String></td><td>Read-write</td><td>Audience for which token is being sent by NetScaler IdP. This is typically entity name or url that represents the recipient.</td></tr><tr><td>skewtime</td><td>&lt;Double></td><td>Read-write</td><td>This option specifies the duration for which the token sent by NetScaler IdP is valid. For example, if skewTime is 10, then token would be valid from (current time - 10) min to (current time + 10) min, ie 20min in all.<br>Default value: 5</td></tr><tr><td>defaultauthenticationgroup</td><td>&lt;String></td><td>Read-write</td><td>This is the group that is added to user sessions that match current IdP policy. It can be used in policies to identify relying party trust.</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the new OAuth Identity Provider (IdP) single sign-on profile. Must begin with an ASCII alphanumeric or underscore (_) character, and must contain only ASCII alphanumeric, underscore, hash (#), period (.), space, colon (:), at (@), equals (=), and hyphen (-) characters. Cannot be changed after an action is created.<br><br>The following requirement applies only to the Citrix ADC CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, "my action" or 'my action').<br>Minimum length = 1</td></tr><tr><td>clientid</td><td>&lt;String></td><td>Read-write</td><td>Unique identity of the relying party requesting for authentication.<br>Minimum length = 1</td></tr><tr><td>clientsecret</td><td>&lt;String></td><td>Read-write</td><td>Unique secret string to authorize relying party at authorization server.<br>Minimum length = 1</td></tr><tr><td>redirecturl</td><td>&lt;String></td><td>Read-write</td><td>URL endpoint on relying party to which the OAuth token is to be sent.<br>Minimum length = 1</td></tr><tr><td>issuer</td><td>&lt;String></td><td>Read-write</td><td>The name to be used in requests sent from Citrix ADC to IdP to uniquely identify Citrix ADC.<br>Minimum length = 1</td></tr><tr><td>audience</td><td>&lt;String></td><td>Read-write</td><td>Audience for which token is being sent by Citrix ADC IdP. This is typically entity name or url that represents the recipient.</td></tr><tr><td>skewtime</td><td>&lt;Double></td><td>Read-write</td><td>This option specifies the duration for which the token sent by Citrix ADC IdP is valid. For example, if skewTime is 10, then token would be valid from (current time - 10) min to (current time + 10) min, ie 20min in all.<br>Default value: 5</td></tr><tr><td>defaultauthenticationgroup</td><td>&lt;String></td><td>Read-write</td><td>This is the group that is added to user sessions that match current IdP policy. It can be used in policies to identify relying party trust.</td></tr><tr><td>relyingpartymetadataurl</td><td>&lt;String></td><td>Read-write</td><td>This is the endpoint at which Citrix ADC IdP can get details about Relying Party (RP) being configured. Metadata response should include endpoints for jwks_uri for RP public key(s).</td></tr><tr><td>refreshinterval</td><td>&lt;Double></td><td>Read-write</td><td>Interval at which Relying Party metadata is refreshed.<br>Default value: 50</td></tr><tr><td>encrypttoken</td><td>&lt;String></td><td>Read-write</td><td>Option to encrypt token when Citrix ADC IDP sends one.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>oauthstatus</td><td>&lt;String></td><td>Read-only</td><td>Describes status information of oauth idp metadata fetch process.<br>Default value: INIT<br>Possible values = INIT, CERTFETCH, AADFORGRAPH, GRAPH, AADFORMDM, MDMINFO, COMPLETE</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>}}```
+<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>,"relyingpartymetadataurl":<String_value>,"refreshinterval":<Double_value>,"encrypttoken":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -62,7 +62,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>}}```
+<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>,"relyingpartymetadataurl":<String_value>,"refreshinterval":<Double_value>,"encrypttoken":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -77,7 +77,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"issuer":true,"audience":true,"skewtime":true,"defaultauthenticationgroup":true}}```
+<b>Request Payload: </b>```{"authenticationoauthidpprofile":{<b>"name":<String_value>,</b>"issuer":true,"audience":true,"skewtime":true,"defaultauthenticationgroup":true,"relyingpartymetadataurl":true,"refreshinterval":true,"encrypttoken":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -119,7 +119,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "authenticationoauthidpprofile": [ {"name":<String_value>,"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>}]}```
+<b>Response Payload: </b>```{ "authenticationoauthidpprofile": [ {"name":<String_value>,"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>,"relyingpartymetadataurl":<String_value>,"refreshinterval":<Double_value>,"encrypttoken":<String_value>,"oauthstatus":<String_value>}]}```
 
 
 
@@ -150,7 +150,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "authenticationoauthidpprofile": [ {"name":<String_value>,"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>}]}```
+<b>Response Payload: </b>```{ "authenticationoauthidpprofile": [ {"name":<String_value>,"clientid":<String_value>,"clientsecret":<String_value>,"redirecturl":<String_value>,"issuer":<String_value>,"audience":<String_value>,"skewtime":<Double_value>,"defaultauthenticationgroup":<String_value>,"relyingpartymetadataurl":<String_value>,"refreshinterval":<Double_value>,"encrypttoken":<String_value>,"oauthstatus":<String_value>}]}```
 
 
 

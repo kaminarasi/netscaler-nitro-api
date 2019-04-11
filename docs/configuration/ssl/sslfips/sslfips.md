@@ -12,7 +12,7 @@ Configuration for fips resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [RESET](#)| [CHANGE](#c)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [RESET](#)| [CHANGE](#c)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

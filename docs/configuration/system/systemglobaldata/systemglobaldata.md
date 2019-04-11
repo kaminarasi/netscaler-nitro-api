@@ -12,7 +12,7 @@ Configuration for global counter data resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET (ALL)](#get-)
+[GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

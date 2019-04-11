@@ -12,7 +12,7 @@ Binding object showing the sqlinjection that can be bound to appfwprofile.
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#get-)| [COUNT](#)
+[ADD:]()| [DELETE:](#de)| [GET]()| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:
@@ -43,6 +43,12 @@ HTTP Status Code on Success: 201 CreatedHTTP Status Code on Failure: 4xx &lt;st
 
 
 <b>URL:</b>http://&lt;netscaler-ip-address&gt;/nitro/v1/config/appfwprofile_sqlinjection_binding/name_value&lt;String&gt;
+<b>Query-parameters:</b>
+<b>args</b>
+http://&lt;netscaler-ip-address&gt;/nitro/v1/config/appfwprofile_sqlinjection_binding/name_value&lt;String&gt;?<b>args=sqlinjection:&lt;String_value&gt;,formactionurl_sql:&lt;String_value&gt;,as_scan_location_sql:&lt;String_value&gt;,as_value_type_sql:&lt;String_value&gt;,as_value_expr_sql:&lt;String_value&gt;</b>
+
+
+
 <b>HTTP Method:</b>DELETE
 <b>Request Headers:</b>
 

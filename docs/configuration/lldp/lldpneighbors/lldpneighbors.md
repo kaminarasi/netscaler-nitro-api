@@ -12,7 +12,7 @@ Configuration for lldp neighbors resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[CLEAR](#)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[CLEAR](#)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:

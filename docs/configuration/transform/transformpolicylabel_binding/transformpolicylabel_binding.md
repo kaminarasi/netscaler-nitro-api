@@ -7,12 +7,12 @@ Binding object which returns the resources bound to transformpolicylabel.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name for the policy label. Must begin with a letter, number, or the underscore character (_), and must contain only letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at (@), equals (=), colon (:), and underscore characters. Can be changed after the URL Transformation policy label is added.<br><br>The following requirement applies only to the NetScaler CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, ?my transform policylabel? or ?my transform policylabel).</td></tr><tr><td>transformpolicylabel_policybinding_binding</td><td>&lt;transformpolicylabel_policybinding_binding[]></td><td>Read-only</td><td>policybinding that can be bound to transformpolicylabel.</td></tr><tr><td>transformpolicylabel_transformpolicy_binding</td><td>&lt;transformpolicylabel_transformpolicy_binding[]></td><td>Read-only</td><td>transformpolicy that can be bound to transformpolicylabel.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>labelname</td><td>&lt;String></td><td>Read-write</td><td>Name for the policy label. Must begin with a letter, number, or the underscore character (_), and must contain only letters, numbers, and the hyphen (-), period (.) pound (#), space ( ), at (@), equals (=), colon (:), and underscore characters. Can be changed after the URL Transformation policy label is added.<br><br>The following requirement applies only to the Citrix ADC CLI:<br>If the name includes one or more spaces, enclose the name in double or single quotation marks (for example, ?my transform policylabel? or ?my transform policylabel).</td></tr><tr><td>transformpolicylabel_policybinding_binding</td><td>&lt;transformpolicylabel_policybinding_binding[]></td><td>Read-only</td><td>policybinding that can be bound to transformpolicylabel.</td></tr><tr><td>transformpolicylabel_transformpolicy_binding</td><td>&lt;transformpolicylabel_transformpolicy_binding[]></td><td>Read-only</td><td>transformpolicy that can be bound to transformpolicylabel.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[GET]()| [GET (ALL)](#get-)
+[GET]()| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:

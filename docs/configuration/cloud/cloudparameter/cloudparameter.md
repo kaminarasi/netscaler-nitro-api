@@ -7,12 +7,12 @@ Configuration for cloud parameter resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>controllerfqdn</td><td>&lt;String></td><td>Read-write</td><td>FQDN of the controller to which the Netscaler SDProxy Connects.<br>Minimum length = 1</td></tr><tr><td>controllerport</td><td>&lt;Integer></td><td>Read-write</td><td>Port number of the controller to which the Netscaler SDProxy connects.<br>Minimum value = 1<br>Range 1 - 65535<br>* in CLI is represented as 65535 in NITRO API</td></tr><tr><td>instanceid</td><td>&lt;String></td><td>Read-write</td><td>Instance ID of the customer provided by Trust.<br>Minimum length = 1</td></tr><tr><td>customerid</td><td>&lt;String></td><td>Read-write</td><td>Customer ID of the citrix cloud customer.<br>Minimum length = 1</td></tr><tr><td>resourcelocation</td><td>&lt;String></td><td>Read-write</td><td>Resource Location of the customer provided by Trust.<br>Minimum length = 1</td></tr><tr><td>verifyurl</td><td>&lt;String></td><td>Read-write</td><td>Verify url will be fetched from the trust service and consumed by GUI to login to the cloud.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>controllerfqdn</td><td>&lt;String></td><td>Read-write</td><td>FQDN of the controller to which the Citrix ADC SDProxy Connects.<br>Minimum length = 1</td></tr><tr><td>controllerport</td><td>&lt;Integer></td><td>Read-write</td><td>Port number of the controller to which the Citrix ADC SDProxy connects.<br>Minimum value = 1<br>Range 1 - 65535<br>* in CLI is represented as 65535 in NITRO API</td></tr><tr><td>instanceid</td><td>&lt;String></td><td>Read-write</td><td>Instance ID of the customer provided by Trust.<br>Minimum length = 1</td></tr><tr><td>customerid</td><td>&lt;String></td><td>Read-write</td><td>Customer ID of the citrix cloud customer.<br>Minimum length = 1</td></tr><tr><td>resourcelocation</td><td>&lt;String></td><td>Read-write</td><td>Resource Location of the customer provided by Trust.<br>Minimum length = 1</td></tr><tr><td>activationcode</td><td>&lt;String></td><td>Read-write</td><td>Activation code for the NGS Connector instance.</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#get-)
+[UPDATE](#u)| [UNSET](#)| [GET (ALL)](#ge)
 
 
 Some options that you can use for each operations:
@@ -33,7 +33,7 @@ Mandatory parameters are marked in <span style="color:#FF0000;">red</span>and pl
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"cloudparameter":{"controllerfqdn":<String_value>,"controllerport":<Integer_value>,"instanceid":<String_value>,"customerid":<String_value>,"resourcelocation":<String_value>,"verifyurl":<String_value>}}```
+<b>Request Payload: </b>```{"cloudparameter":{"controllerfqdn":<String_value>,"controllerport":<Integer_value>,"instanceid":<String_value>,"customerid":<String_value>,"resourcelocation":<String_value>,"activationcode":<String_value>}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -48,7 +48,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Cookie:NITRO_AUTH_TOKEN=&lt;tokenvalue&gt;Content-Type:application/json
 
-<b>Request Payload: </b>```{"cloudparameter":{"instanceid":true,"customerid":true,"resourcelocation":true,"verifyurl":true}}```
+<b>Request Payload: </b>```{"cloudparameter":{"instanceid":true,"customerid":true,"resourcelocation":true}}```
 <b>Response:</b>
 HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&gt; (for general HTTP errors) or 5xx &lt;string&gt; (for NetScaler-specific errors). The response payload provides details of the error
 
@@ -68,7 +68,7 @@ HTTP Status Code on Success: 200 OKHTTP Status Code on Failure: 4xx &lt;string&
 
 Content-Type:application/json
 
-<b>Response Payload: </b>```{ "cloudparameter": [ {"controllerfqdn":<String_value>,"controllerport":<Integer_value>,"instanceid":<String_value>,"customerid":<String_value>,"resourcelocation":<String_value>,"verifyurl":<String_value>}]}```
+<b>Response Payload: </b>```{ "cloudparameter": [ {"controllerfqdn":<String_value>,"controllerport":<Integer_value>,"instanceid":<String_value>,"customerid":<String_value>,"resourcelocation":<String_value>}]}```
 
 
 

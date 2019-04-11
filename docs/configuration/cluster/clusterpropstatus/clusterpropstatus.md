@@ -12,7 +12,7 @@ Configuration for 0 resource.
 <span>(click to see [Properties](#prope))</span>
 
 
-[CLEAR](#)| [GET (ALL)](#get-)| [COUNT](#)
+[CLEAR](#)| [GET (ALL)](#ge)| [COUNT](#)
 
 
 Some options that you can use for each operations:

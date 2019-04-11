@@ -7,12 +7,12 @@ Configuration for Next Hop Server resource.
 <span>(click to see [Operations](#opera))</span>
 
 
-<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the NetScaler Gateway appliance in the first DMZ.<br>Minimum length = 1<br>Maximum length = 32</td></tr><tr><td>nexthopip</td><td>&lt;String></td><td>Read-write</td><td>IP address of the NetScaler Gateway proxy in the second DMZ.</td></tr><tr><td>nexthopfqdn</td><td>&lt;String></td><td>Read-write</td><td>FQDN of the NetScaler Gateway proxy in the second DMZ.<br>Minimum length = 1</td></tr><tr><td>resaddresstype</td><td>&lt;String></td><td>Read-write</td><td>Address Type (IPV4/IPv6) of DNS name of nextHopServer FQDN.<br>Minimum length = 1<br>Possible values = IPV4, IPV6</td></tr><tr><td>nexthopport</td><td>&lt;Integer></td><td>Read-write</td><td>Port number of the NetScaler Gateway proxy in the second DMZ.<br>Minimum value = 1<br>Maximum value = 65535</td></tr><tr><td>secure</td><td>&lt;String></td><td>Read-write</td><td>Use of a secure port, such as 443, for the double-hop configuration.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Data Type</th><th>Permissions</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>&lt;String></td><td>Read-write</td><td>Name for the Citrix Gateway appliance in the first DMZ.<br>Minimum length = 1<br>Maximum length = 32</td></tr><tr><td>nexthopip</td><td>&lt;String></td><td>Read-write</td><td>IP address of the Citrix Gateway proxy in the second DMZ.</td></tr><tr><td>nexthopfqdn</td><td>&lt;String></td><td>Read-write</td><td>FQDN of the Citrix Gateway proxy in the second DMZ.<br>Minimum length = 1</td></tr><tr><td>resaddresstype</td><td>&lt;String></td><td>Read-write</td><td>Address Type (IPV4/IPv6) of DNS name of nextHopServer FQDN.<br>Minimum length = 1<br>Possible values = IPV4, IPV6</td></tr><tr><td>nexthopport</td><td>&lt;Integer></td><td>Read-write</td><td>Port number of the Citrix Gateway proxy in the second DMZ.<br>Minimum value = 1<br>Maximum value = 65535</td></tr><tr><td>secure</td><td>&lt;String></td><td>Read-write</td><td>Use of a secure port, such as 443, for the double-hop configuration.<br>Default value: OFF<br>Possible values = ON, OFF</td></tr><tr><td>__count</td><td>&lt;Double></td><td>Read-only</td><td>count parameter</td></tr></tbody></table>
 ##Operations 
 <span>(click to see [Properties](#prope))</span>
 
 
-[ADD]()| [DELETE](#d)| [GET (ALL)](#get-)| [GET]()| [COUNT](#)
+[ADD]()| [DELETE](#d)| [GET (ALL)](#ge)| [GET]()| [COUNT](#)
 
 
 Some options that you can use for each operations:
