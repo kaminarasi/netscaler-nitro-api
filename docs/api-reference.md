@@ -1,8 +1,6 @@
-# NetScaler 12.0 Nitro REST API Reference
+#API Reference
 
 This documentation provides details of all operations that can be performed on the NetScaler appliance by using the REST API.
-* [Configuration](./configuration/configuration.md)
-* [Statistics](./statistics/statistics.md)
-* [Error Messages](./error-messages/error-messages.md)
+<ul><li><a href="configuration/configuration">Configuration</a></li><li><a href="statistics/statistics">Statistics</a></li><li><a href="error-messages/error-messages">Error Messages</a></li></ul>
 
 
